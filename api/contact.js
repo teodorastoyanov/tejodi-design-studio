@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+const nodemailer = require("nodemailer");
 
 const isEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(String(v || "").trim());
 
@@ -6,10 +6,14 @@ function escapeHeader(v) {
   return String(v || "").replace(/[\r\n]+/g, " ").trim();
 }
 
-export default async function handler(req, res) {
-  if (req.method !== "POST") return res.status(405).send("Method Not Allowed");
+module.exports = async function handler(req, res) {
+  if (req.method !== "POST") {
+    res.setHeader("Allow", "POST");
+    return res.status(405).send("Method Not Allowed");
+  }
 
   try {
+    // Vercel обикновено парсва JSON автоматично, но все пак:
     const data = req.body || {};
     const formType = escapeHeader(data.form_type || "Website form");
 
@@ -27,16 +31,37 @@ export default async function handler(req, res) {
 
     const replyTo = isEmail(clientEmail) ? clientEmail : undefined;
 
+    const host = process.env.SMTP_HOST;
+    const port = Number(process.env.SMTP_PORT || 587);
+    const user = process.env.SMTP_USER;
+    const pass = process.env.SMTP_PASS;
+    const mailFrom = process.env.MAIL_FROM || user;
+    const mailTo = process.env.MAIL_TO;
+
+    if (!host || !user || !pass || !mailTo) {
+      console.error("Missing env vars:", {
+        SMTP_HOST: !!host,
+        SMTP_USER: !!user,
+        SMTP_PASS: !!pass,
+        MAIL_TO: !!mailTo,
+      });
+      return res.status(500).json({ ok: false, error: "Missing server configuration" });
+    }
+
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT || 587),
-      secure: false,
-      auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS },
+      host,
+      port,
+      secure: port === 465,          // 465 SSL, 587 STARTTLS
+      auth: { user, pass },
+      requireTLS: port === 587,      // Zoho често го иска
     });
 
+    // по желание: да хване проблем с логин веднага
+    // await transporter.verify();
+
     await transporter.sendMail({
-      from: `TejodiDesign Website <${process.env.MAIL_FROM}>`,
-      to: process.env.MAIL_TO,
+      from: `TejodiDesign Website <${mailFrom}>`,
+      to: mailTo,
       subject: `Форма: ${formType}`,
       text: body,
       ...(replyTo ? { replyTo } : {}),
@@ -44,6 +69,7 @@ export default async function handler(req, res) {
 
     return res.status(200).json({ ok: true });
   } catch (err) {
-    return res.status(500).json({ ok: false });
+    console.error("CONTACT_SEND_ERROR:", err);
+    return res.status(500).json({ ok: false, error: "Send failed" });
   }
-}
+};
