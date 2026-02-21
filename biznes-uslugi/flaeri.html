@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Дизайн на флаери и брошури</title>
+<link href="../styles/bezkartini.css" rel="stylesheet"/>
+<link href="../images/fav.svg" rel="icon"/>
+</head>
+<body>
+<div id="top">
+<a aria-label="Върни се на върха" class="back-to-top" href="#top">↑</a>
+</div>
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<section class="hero-section" id="hero">
+<div class="hero-content">
+<h1>Флаери и брошури</h1>
+<p>Избери най-подходящия вид рекламни материали и се възползвай от професионален дизайн и отлично качество на печат.</p>
+<a class="cta-button" href="#contact">Изпратете запитване</a>
+</div>
+</section>
+<!-- Price Section -->
+<section class="price-section">
+<h2>Цени</h2>
+<div class="price-table">
+
+<table>
+<tr class="currency-row">
+<td><h3>Цени за дизайн</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">лв</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="58.67" data-price-eur="30.00">
+<td>Едностранен флаер</td>
+<td><span>от </span><span class="price-value">30.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="88.01" data-price-eur="45.00">
+<td>Двустранен флаер</td>
+<td><span>от </span><span class="price-value">45.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="136.91" data-price-eur="70.00">
+<td>Мини брошура (3 на един лист A4)</td>
+<td><span>от </span><span class="price-value">70.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="195.58" data-price-eur="100.00">
+<td>Стандартна брошура (A4)</td>
+<td><span>от </span><span class="price-value">100.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+
+
+<table>
+<tr class="currency-row">
+<td><h3>Цени за принтиране (един брой)</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="0.98" data-price-eur="0.50">
+<td>Едностранен флаер (А5)</td>
+<td><span>от </span><span class="price-value">0.50</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="1.96" data-price-eur="1.00">
+<td>Едностранен флаер (А4)</td>
+<td><span>от </span><span class="price-value">1.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="1.96" data-price-eur="1.00">
+<td>Двустранен флаер (А5)</td>
+<td><span>от </span><span class="price-value">1.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="2.93" data-price-eur="1.50">
+<td>Двустранен флаер (А4)</td>
+<td><span>от </span><span class="price-value">1.50</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="2.93" data-price-eur="1.50">
+<td>Мини брошура (3 на A4)</td>
+<td><span>от </span><span class="price-value">1.50</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="3.91" data-price-eur="2.00">
+<td>Стандартна брошура (A4)</td>
+<td><span>от </span><span class="price-value">2.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+
+
+<table>
+<tr class="currency-row">
+<td><h3>Допълнителни услуги</h3></td>
+<td></td>
+</tr>
+<tr>
+<td>Редакции и корекции</td>
+<td>включени в цената</td>
+</tr>
+<tr>
+<td>Файлове за печат (PDF, JPEG)</td>
+<td>включени в цената</td>
+</tr>
+</table>
+
+</div>
+</section>
+
+<section aria-labelledby="form-title" class="form form-styled" id="contact">
+<h2 id="form-title">Запитване за изработка на флаери и брошури</h2>
+<form action="../api/contact.js" id="contactForm" method="POST">
+<div class="form-box">
+<div class="row personal-info">
+<input name="form_type" type="hidden" value="Форма флаери/брошури"/>
+<input name="Име" placeholder="Име" required="" type="text"/>
+<input name="Фамилия" placeholder="Фамилия" required="" type="text"/>
+<input name="Имейл" placeholder="Имейл" required="" type="email"/>
+<input name="Телефон" placeholder="Телефон (по желание)" type="tel"/>
+</div>
+<div class="row form-options">
+<div class="column">
+<fieldset>
+<legend>Тип продукт</legend>
+<label><input name="Тип продукт" required="" type="radio" value="Флаер"/> Флаер</label>
+<label><input name="Тип продукт" type="radio" value="Брошура"/> Брошура</label>
+</fieldset>
+<fieldset>
+<legend>Размер</legend>
+<label><input name="Размер" required="" type="radio" value="A6"/> A6</label>
+<label><input name="Размер" type="radio" value="A5"/> A5</label>
+<label><input name="Размер" type="radio" value="A4"/> A4</label>
+<label><input name="Размер" type="radio" value="Мини брошура (3 на A4)"/> Мини брошура (3 броя на лист A4)</label>
+</fieldset>
+</div>
+<div class="column">
+<fieldset>
+<legend>Печат</legend>
+<label><input name="Печат" required="" type="radio" value="Едностранна"/> Едностранна</label>
+<label><input name="Печат" type="radio" value="Двустранна"/> Двустранна</label>
+</fieldset>
+<fieldset>
+<legend>Количество</legend>
+<label><input name="Бройка" required="" type="radio" value="1-100"/> 1–100</label>
+<label><input name="Бройка" type="radio" value="101-250"/> 101–250</label>
+<label><input name="Бройка" type="radio" value="251-500"/> 251–500</label>
+<label><input name="Бройка" type="radio" value="500+"/> Над 500</label>
+</fieldset>
+</div>
+</div>
+<label for="additional-info">Допълнителна информация</label>
+<textarea id="additional-info" name="Допълнителна информация" placeholder="Опишете съдържанието, стила, предпочитаните цветове, логото или снимки за включване и др."></textarea>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+              Съгласен/на съм с
+              <a href="../terms_and_conditions/privacy.html" target="_blank">Политиката за поверителност</a>
+              и
+              <a href="../terms_and_conditions/terms.html" target="_blank">Общите условия</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Изпрати</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</div>
+</form>
+</section>
+<footer class="site-footer" id="site-footer"></footer>
+<script defer src="../site-shell.js"></script>
+<script defer src="../script.js"></script>
+</body>
+</html>

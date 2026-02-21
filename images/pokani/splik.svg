@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f0f2f5"/>
+  <rect x="40" y="40" width="720" height="520" rx="24" fill="#ffffff" stroke="#cfd4dc" stroke-width="4"/>
+  <text x="400" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="#5a606a">Image coming soon</text>
+</svg>

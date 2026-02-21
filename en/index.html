@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Tejodi Design Studio</title>
+<link href="../styles/index.css" rel="stylesheet"/>
+<link href="../images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+<!-- Back to top button -->
+<div id="top">
+<a aria-label="Back to top" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<h1>Welcome to Tejodi Design Studio</h1>
+<p>I am Teodora Stoyanov – a graphic designer with attention to detail and a unique style.</p>
+</section>
+<!-- Services Overview -->
+<section class="services-section" id="services">
+<h2 class="section-title">Services</h2>
+<div class="services-grid">
+<a class="service-link" href="biznes-uslugi/sait.html">
+<div class="service-card">
+<img alt="Сайт" src="../images/ikoni_uslugi/sait.svg"/>
+<h3>Website</h3>
+<p>Modern and fast websites designed to present your business professionally online.</p>
+</div>
+</a>
+<a class="service-link" href="biznes-uslugi/vizitki.html">
+<div class="service-card">
+<img alt="Business Cards" src="../images/ikoni_uslugi/vizitki.svg"/>
+<h3>Business Cards</h3>
+<p>Stylish and professional business cards with custom design. Make a first impression that lasts.</p>
+</div>
+</a>
+<a class="service-link" href="biznes-uslugi/logo.html">
+<div class="service-card">
+<img alt="Logos" src="../images/ikoni_uslugi/logo1.svg"/>
+<h3>Logos</h3>
+<p>Custom-designed logos that reflect your brand's vision and values - from minimalistic to artistic.</p>
+</div>
+</a>
+<a class="service-link" href="biznes-uslugi/flaeri.html">
+<div class="service-card">
+<img alt="Brochures" src="../images/ikoni_uslugi/broshuri.svg"/>
+<h3>Brochures</h3>
+<p>Marketing materials with professional design, clear layout, and strong visual impact - ideal for campaigns and events.</p>
+</div>
+</a>
+<a class="service-link" href="personalizirani/podaruci.html">
+<div class="service-card">
+<img alt="Gifts" src="../images/ikoni_uslugi/podaruci.svg"/>
+<h3>Accessories &amp; Gifts</h3>
+<p>Personalized gifts for every occasion - stylish, unique, and emotionally meaningful. Suitable for personal and corporate events.</p>
+</div>
+</a>
+<a class="service-link" href="biznes-uslugi/tetradki-planeri.html">
+<div class="service-card">
+<img alt="Notebooks &amp; Planners" src="../images/ikoni_uslugi/tetradki.svg"/>
+<h3>Notebooks &amp; Planners</h3>
+<p>Functional and beautiful paper products with custom design - perfect for organization, inspiration, or gifts.</p>
+</div>
+</a>
+<a class="service-link" href="personalizirani/drehi.html">
+<div class="service-card">
+<img alt="Clothing" src="../images/ikoni_uslugi/drehi.svg"/>
+<h3>Clothing</h3>
+<p>Custom designs for t-shirts, sweatshirts, and other apparel. Express your style or create a memorable gift.</p>
+</div>
+</a>
+<a class="service-link" href="sabitiya/pokani.html">
+<div class="service-card">
+<img alt="Invitations" src="../images/ikoni_uslugi/pokani.svg"/>
+<h3>Invitations</h3>
+<p>Unique invitations with personal style - paper or digital. Perfect for weddings, proms, birthdays, and more.</p>
+</div>
+</a>
+<a class="service-link" href="personalizirani/kalendari.html">
+<div class="service-card">
+<img alt="Calendars" src="../images/ikoni_uslugi/kalendari.svg"/>
+<h3>Calendars</h3>
+<p>Personalized calendars with corporate or personal design - a stylish and practical gift all year round.</p>
+</div>
+</a>
+<h2>And many more products and services!</h2>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="form" id="contact">
+<h2>Contact Me</h2>
+<form action="/../api/contact" id="contactForm" method="POST">
+<div class="contact-row">
+<input name="form_type" type="hidden" value="Main Form"/>
+<input name="name" placeholder="First Name" required="" type="text"/>
+<input name="surname" placeholder="Last Name" required="" type="text"/>
+<input name="email" placeholder="Email" required="" type="email"/>
+<input name="phone" placeholder="Phone (optional)" type="tel"/>
+</div>
+<textarea name="message" placeholder="Looking for something special? If you can't find the exact service you need - write to me! There's always room for new ideas. I'd love to discuss your concept and bring it to life." required=""></textarea>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+            I agree to the <a href="terms_and_conditions/privacy.html" target="_blank">Privacy Policy</a> and <a href="terms_and_conditions/terms.html" target="_blank">Terms &amp; Conditions</a>
+</label>
+</div>
+<button class="button-gradient" type="submit">Send</button>
+<p id="formMessage"></p>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script defer src="../site-shell.js"></script>
+<script defer src="../script.js"></script>
+</body>
+</html>

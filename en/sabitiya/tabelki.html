@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Name Place Card Design</title>
+<link href="../../styles/lqvo-dqsno.css" rel="stylesheet"/>
+<link href="../../images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Back to top" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<div class="hero-content">
+<h1>Name Place Cards</h1>
+<p>An elegant and practical accent for any table, made from high-quality paper with attention to every detail.</p>
+<a class="cta-button" href="#contact">Send an inquiry</a>
+</div>
+</section>
+<!-- Products -->
+<section class="products">
+<div class="product-card">
+<img alt="Place card" src="../../images/qr-kartichki/tabelka.png"/>
+<div class="product-info">
+<h2>Table place card</h2>
+<p>Our name place cards add a polished and stylish look to any festive table – weddings, baptisms, anniversaries, or corporate events.</p>
+</div>
+</div>
+</section>
+<!-- Price Section -->
+<section class="price-section">
+<h2>Pricing</h2>
+<div class="price-table">
+
+<table>
+<tr class="currency-row">
+<td><h3>Design pricing</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">BGN</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="3.91" data-price-eur="2.00">
+<td>Single-sided place card</td>
+<td><span>from </span><span class="price-value">2.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="5.87" data-price-eur="3.00">
+<td>Double-sided place card</td>
+<td><span>from </span><span class="price-value">3.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+</table>
+
+<table>
+<tr class="currency-row">
+<td><h3>Printing prices (1 sheet - 2 pieces)</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="1.96" data-price-eur="1.00">
+<td>Single-sided place card</td>
+<td><span>from </span><span class="price-value">1.00</span> <span class="currency-symbol">€</span> / sheet</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="3.91" data-price-eur="2.00">
+<td>Double-sided place card</td>
+<td><span>from </span><span class="price-value">2.00</span> <span class="currency-symbol">€</span> / sheet</td>
+</tr>
+
+</table>
+
+<table>
+<tr class="currency-row">
+<td><h3>Additional services</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="0.98" data-price-eur="0.50">
+<td>Lamination (gloss/matte)</td>
+<td><span>+ </span><span class="price-value">0.50</span> <span class="currency-symbol">€</span> / sheet</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="5.87" data-price-eur="3.00">
+<td>Adding a QR code</td>
+<td><span>+ </span><span class="price-value">3.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+</table>
+
+</div>
+</section>
+
+<!-- Contact Form -->
+<section class="form form-styled" id="contact">
+<h2>Place card inquiry</h2>
+<form action="../../api/contact.js" id="contactForm" method="POST">
+<div class="row personal-info">
+<input name="form_type" type="hidden" value="Place cards form"/>
+<input name="name" placeholder="First name" required="" type="text"/>
+<input name="surname" placeholder="Last name" required="" type="text"/>
+<input name="email" placeholder="Email" required="" type="email"/>
+<input name="phone" placeholder="Phone (optional)" type="tel"/>
+</div>
+<div>
+<textarea id="business-description" name="message" placeholder="Tell us more about the event and the style you want – we’ll contact you to confirm and share a sample design."></textarea>
+</div>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+              I agree to the
+              <a href="../terms_and_conditions/privacy.html" target="_blank">Privacy Policy</a>
+              and
+              <a href="../terms_and_conditions/terms.html" target="_blank">Terms and Conditions</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Send</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script defer src="../../site-shell.js"></script>
+<script defer src="../../script.js"></script>
+</body>
+</html>

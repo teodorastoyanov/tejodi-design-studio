@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Logo Design</title>
+<link href="../../styles/logo.css" rel="stylesheet"/>
+<link href="../../images/fav.svg" rel="icon"/>
+</head>
+<body>
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Back to top" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<!-- Hero Section -->
+<section id="hero">
+<div class="hero-content">
+<h1>Logo</h1>
+<p>Express your style with a professionally crafted and unique design.</p>
+<a class="cta-button" href="#contact">Send Inquiry</a>
+</div>
+</section>
+<!-- Carousel -->
+<section id="products-preview">
+<h2>Примери от проекти</h2>
+<div class="carousel">
+<button aria-label="Предишен" class="carousel-prev">‹</button>
+<div class="carousel-track">
+<div class="carousel-card">
+<img alt="6" src="../../images/logo/6.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="7" src="../../images/logo/7.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="8" src="../../images/logo/8.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="9" src="../../images/logo/9.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="10" src="../../images/logo/10.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="11" src="../../images/logo/11.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="12" src="../../images/logo/12.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="4" src="../../images/logo/4.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="Бутик Селена" src="../../images/logo/jewelry.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="Лого Pure Beauty Cosmetics" src="../../images/logo/purebeauty.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="Лого Pretty Lovely Makeup" src="../../images/logo/prettylovely.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="Лого Студио Майка и Бебе" src="../../images/logo/maikaibebe.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="Зъболекарски кабинет" src="../../images/logo/zubolekar.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="Beauty Salon" src="../../images/logo/beautysalon.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="Лого Auréla Jewelry" src="../../images/logo/jewelry.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="Груминг салон" src="../../images/logo/grumingsalon.svg"/>
+</div>
+</div>
+<button aria-label="Следващ" class="carousel-next">›</button>
+</div>
+</section>
+<!-- Price Section -->
+<section class="price-section">
+<h2>Prices</h2>
+<div class="price-table">
+<table>
+<tr class="currency-row">
+<td><h3>Design Prices</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">BGN</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+<tr class="price-item" data-price-bgn="234.70" data-price-eur="120">
+<td>Primary logo (vector file + PNG)</td>
+<td><span>from </span><span class="price-value">120.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="78.23" data-price-eur="40">
+<td>Additional concept options</td>
+<td><span>+ </span><span class="price-value">40.00</span> <span class="currency-symbol">€</span> / piece</td>
+</tr>
+<tr class="price-item" data-price-bgn="39.12" data-price-eur="20">
+<td>Additional versions (b/w, horizontal, vertical)</td>
+<td><span>+ </span><span class="price-value">20.00</span> <span class="currency-symbol">€</span> / piece</td>
+</tr>
+<tr class="price-item">
+<td>Edits on selected logo</td>
+<td>included in the price</td>
+</tr>
+<tr class="price-item">
+<td>Files for print and web (PDF, EPS, SVG, PNG, JPG)</td>
+<td>included in the price</td>
+</tr>
+</table>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="form" id="contact">
+<h2>Logo Design Inquiry</h2>
+<form action="../../api/contact.js" id="contactForm" method="POST">
+<div class="contact-row">
+<input name="form_type" type="hidden" value="Logo Form"/>
+<input name="name" placeholder="First Name" required="" type="text"/>
+<input name="surname" placeholder="Last Name" required="" type="text"/>
+<input name="email" placeholder="Email" required="" type="email"/>
+<input name="phone" placeholder="Phone (optional)" type="tel"/>
+</div>
+<textarea id="business-description" name="message" placeholder="Tell us about your company, preferred style (e.g. minimalist, retro, modern), colors, symbols or elements you'd like to include, and any specific requirements or ideas."></textarea>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+            I agree with the
+            <a href="../terms_and_conditions/privacy.html" target="_blank">Privacy Policy</a>
+            and
+            <a href="../terms_and_conditions/terms.html" target="_blank">Terms &amp; Conditions</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Send</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script src="../../script.js"></script>
+<script defer="defer" src="../../site-shell.js"></script></body>
+</html>

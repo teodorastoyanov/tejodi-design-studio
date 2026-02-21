@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Дизайн на тетрадки и планери</title>
+<link href="../styles/lqvo-dqsno.css" rel="stylesheet"/>
+<link href="../images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+<body class="tetradki-planeri">
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Върни се на върха" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<div class="hero-content">
+<h1>Тетрадки и планери</h1>
+<p>Красиви и персонализирани тетрадки и планери, създадени за вдъхновение във всекидневието. Подходящи както за подарък, така и за лично удоволствие.</p>
+<a class="cta-button" href="#contact">Изпратете запитване</a>
+</div>
+</section>
+<!-- Products Preview -->
+<section class="products">
+<div class="product-card">
+<img alt="Планер на моята бременност" src="../images/tetradki/bremennost.png"/>
+<div class="product-info">
+<h2>Планер на моята бременност</h2>
+<p>Персонализиран планер за бъдещи майки с отделения за медицински бележки, снимки, емоции и важни моменти. Формат A5, 76 страници.</p>
+</div>
+</div>
+<div class="product-card reverse">
+<img alt="Финансов планер" src="../images/tetradki/finansov.png"/>
+<div class="product-info">
+<h2>Финансов планер</h2>
+<p>Организирайте финансите си лесно и ефективно – бюджет, разходи, спестявания и цели, събрани в стилен и функционален планер. Формат A5, 56 страници.</p>
+</div>
+</div>
+<div class="product-card">
+<img alt="Тетрадки за училище" src="../images/tetradki/uchilishte.png"/>
+<div class="product-info">
+<h2>Тетрадки за училище</h2>
+<p>Ярки и уникални тетрадки с индивидуален дизайн според предмет или стил. Подходящи за деца и ученици. Формат A5, 60–100 страници.</p>
+</div>
+</div>
+<div class="product-card reverse">
+<img alt="Персонален дневник" src="../images/tetradki/planer.png"/>
+<div class="product-info">
+<h2>Персонален дневник</h2>
+<p>Запишете мислите и спомените си или водете личен журнал. Може да бъде с вдъхновяващи корици, цитати и персонално име. Формат A5.</p>
+</div>
+</div>
+<div class="product-card">
+<img alt="Дневник на пътешествията" src="../images/tetradki/planer.png"/>
+<div class="product-info">
+<h2>Дневник на пътешествията</h2>
+<p>Съхранете спомени от всяко пътуване – страници за места, снимки, преживявания, оценки и препоръки. Стилен подарък за пътешественици. Формат A5.</p>
+</div>
+</div>
+</section>
+<!-- Price Section -->
+<section class="price-section">
+<h2>Цени</h2>
+<div class="price-table">
+<table>
+<tr class="currency-row">
+<td><h3>Цени за принтиране (за един брой)</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">лв</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="19.56" data-price-eur="10.00">
+<td>Стандартен дизайн (по шаблон) – Формат A5</td>
+<td><span>от </span><span class="price-value">10.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="29.34" data-price-eur="15.00">
+<td>Индивидуален дизайн по поръчка</td>
+<td><span>от </span><span class="price-value">15.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="5.87" data-price-eur="3.00">
+<td>Добавяне на име, надпис или послание</td>
+<td><span>+ </span><span class="price-value">3.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item">
+<td>Друг формат или напълно персонализиран</td>
+<td>Изпратете запитване</td>
+</tr>
+</table>
+</div>
+</section>
+
+<!-- Contact Form -->
+<section class="form form-styled" id="contact">
+<h2>Запитване за тетрадка/планер</h2>
+<form action="../api/contact.js" id="contactForm" method="POST">
+<div class="row personal-info">
+<input name="form_type" type="hidden" value="Форма тетрадки/планери"/>
+<input name="name" placeholder="Име" required="" type="text"/>
+<input name="surname" placeholder="Фамилия" required="" type="text"/>
+<input name="email" placeholder="Имейл" required="" type="email"/>
+<input name="phone" placeholder="Телефон (по желание)" type="tel"/>
+</div>
+<div>
+<textarea id="business-description" name="message" placeholder="Моля, опишете желан продукт, стандартен или индивидуален дизайн, искани промени (ако има) и приблизителен брой бройки за поръчка." required=""></textarea>
+</div>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+              Съгласен/на съм с
+              <a href="../terms_and_conditions/privacy.html" target="_blank">Политиката за поверителност</a>
+              и
+              <a href="../terms_and_conditions/terms.html" target="_blank">Общите условия</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Изпрати</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script defer src="../site-shell.js"></script>
+<script defer src="../script.js"></script>
+</body>
+</html>

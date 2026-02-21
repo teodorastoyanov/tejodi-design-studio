@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Bookmark Design</title>
+<link href="../../styles/prosta.css" rel="stylesheet"/>
+<link href="../../images/fav.svg" rel="icon"/>
+</head>
+<body>
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Back to top" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<!-- Hero Section -->
+<section class="hero-section" id="hero">
+<div class="hero-content">
+<h1>Bookmarks</h1>
+<p>Suitable for gifts, events, or brand campaigns. 
+        Available in various sizes, paper types, and with the option to add decorative elements.</p>
+<a class="cta-button" href="#contact">Send an inquiry</a>
+</div>
+</section>
+<!-- Price Section -->
+<section class="price-section">
+<h2>Pricing</h2>
+<div class="price-table">
+
+<table>
+<tr class="currency-row">
+<td><h3>Price per piece (design + printing)</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">BGN</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="3.91" data-price-eur="2.00">
+<td>Single-sided design (5×15 cm)</td>
+<td><span>from </span><span class="price-value">2.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="5.87" data-price-eur="3.00">
+<td>Double-sided design</td>
+<td><span>from </span><span class="price-value">3.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="7.82" data-price-eur="4.00">
+<td>Custom design</td>
+<td><span>from </span><span class="price-value">4.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+</table>
+
+
+<table>
+<tr class="currency-row">
+<td><h3>Additional services</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="0.98" data-price-eur="0.50">
+<td>Lamination (matte/gloss)</td>
+<td><span>+ </span><span class="price-value">0.50</span> <span class="currency-symbol">€</span> / piece</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="1.96" data-price-eur="1.00">
+<td>Adding a ribbon/band at the top</td>
+<td><span>+ </span><span class="price-value">1.00</span> <span class="currency-symbol">€</span> / piece</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="1.96" data-price-eur="1.00">
+<td>Personal message or name</td>
+<td><span>+ </span><span class="price-value">1.00</span> <span class="currency-symbol">€</span> / piece</td>
+</tr>
+
+</table>
+</div>
+</section>
+
+<!-- Contact Form -->
+<section class="form" id="contact">
+<h2>Bookmark production inquiry</h2>
+<form action="../../api/contact.js" id="contactForm" method="POST">
+<div class="contact-row">
+<input name="form_type" type="hidden" value="Bookmark form"/>
+<input name="name" placeholder="First name" required="" type="text"/>
+<input name="surname" placeholder="Last name" required="" type="text"/>
+<input name="email" placeholder="Email" required="" type="email"/>
+<input name="phone" placeholder="Phone (optional)" type="tel"/>
+</div>
+<textarea id="business-description" name="message" placeholder="Describe the number of bookmarks, need for personalization, and any other requirements."></textarea>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+              I agree to the
+              <a href="../terms_and_conditions/privacy.html" target="_blank">Privacy Policy</a>
+              and
+              <a href="../terms_and_conditions/terms.html" target="_blank">Terms and Conditions</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Send</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script defer src="../../site-shell.js"></script>
+<script defer src="../../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Дизайн на обяви за социални мрежи</title>
+<link href="../styles/prosta.css" rel="stylesheet"/>
+<link href="../images/fav.svg" rel="icon"/>
+</head>
+<body>
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Върни се на върха" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<!-- Hero Section -->
+<section class="hero-section" id="hero">
+<div class="hero-content">
+<h1>Уебсайт за вашия бизнес</h1>
+<p>Бърз, модерен и удобен сайт, който изглежда професионално на телефон и компютър. Подходящ за салони, магазини, услуги, личен бранд и портфолио.</p>
+<a class="cta-button" href="#portfolio">Виж примери</a>
+<a class="cta-button" href="#contact">Изпратете запитване</a>
+</div>
+</section>
+<!--Examples-->
+<section class="portfolio-section" id="portfolio">
+  <h2>Примери за сайтове</h2>
+  <p class="muted">Кликнете върху пример, за да го отворите.</p>
+
+  <div class="portfolio-grid">
+    <a class="portfolio-card" href="https://clean-beauty-studio-starter.vercel.app" target="_blank" rel="noopener">
+      <img src="../images/saitove/beauty-studio-clean.png" alt="Clean Beauty Studio – пример сайт" loading="lazy">
+      <div class="portfolio-meta">
+        <h3>Clean Beauty Studio</h3>
+        <span>Изчистен стил • салон</span>
+      </div>
+    </a>
+
+    <a class="portfolio-card" href="https://luxe-beauty-studio-starter.vercel.app" target="_blank" rel="noopener">
+      <img src="../images/saitove/beauty-studio-luxe.png" alt="Luxe Beauty Studio – пример сайт" loading="lazy">
+      <div class="portfolio-meta">
+        <h3>Luxe Beauty Studio</h3>
+        <span>Луксозен стил • салон</span>
+      </div>
+    </a>
+
+    <a class="portfolio-card" href="https://beauty-studio-starter.vercel.app" target="_blank" rel="noopener">
+      <img src="../images/saitove/beauty-studio.png" alt="Beauty Studio – пример сайт" loading="lazy">
+      <div class="portfolio-meta">
+        <h3>Beauty Studio</h3>
+        <span>Класически стил • салон</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- Price Section -->
+<section class="price-section">
+<h2>Цени</h2>
+<div class="price-table">
+
+<table>
+<tr class="currency-row">
+<td><h3>Еднократни услуги</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">лв</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="430.28" data-price-eur="220.00">
+<td>One-page сайт (начало + услуги + контакти)</td>
+<td><span>от </span><span class="price-value">220.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="762.77" data-price-eur="390.00">
+<td>Multi-page сайт</td>
+<td><span>от </span><span class="price-value">390.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="293.37" data-price-eur="150.00">
+<td>Landing page (кампания/услуга)</td>
+<td><span>от </span><span class="price-value">150.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+
+
+<table>
+<tr class="currency-row">
+<td><h3>Пакети</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="566.19" data-price-eur="290.00">
+<td>Starter - One-page + Google Sheet + форма</td>
+<td><span>от </span><span class="price-value">290.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="1036.59" data-price-eur="530.00">
+<td>Business - До 5 стр + галерия + блог</td>
+<td><span>от </span><span class="price-value">530.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="1564.66" data-price-eur="800.00">
+<td>Premium - Резервации, календар, мултиезичност, интеграции</td>
+<td><span>от </span><span class="price-value">800.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+
+
+<table>
+<tr class="currency-row">
+<td><h3>Допълнителни услуги</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="195.58" data-price-eur="100.00">
+<td>SEO пакет</td>
+<td><span>+ </span><span class="price-value">100.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="58.67" data-price-eur="30.00">
+<td>Месечна поддръжка</td>
+<td><span>+ </span><span class="price-value">30.00</span> <span class="currency-symbol">€</span> / месец</td>
+</tr>
+
+</table>
+
+</div>
+</section>
+
+<!-- Contact Form -->
+<section class="form" id="contact">
+<h2>Запитване за сайт</h2>
+<form action="../api/contact.js" id="contactForm" method="POST">
+<div class="contact-row">
+<input name="form_type" type="hidden" value="Форма обяви"/>
+<input name="name" placeholder="Име" required="" type="text"/>
+<input name="surname" placeholder="Фамилия" required="" type="text"/>
+<input name="email" placeholder="Имейл" required="" type="email"/>
+<input name="phone" placeholder="Телефон (по желание)" type="tel"/>
+</div>
+<textarea id="business-description" name="message" placeholder="Опишете бизнеса си, какъв тип сайт искате (one-page или с отделни страници), дали имате лого/цветове, какви секции да има (услуги, галерия, цени, контакти) и линкове към сайтове, които харесвате."></textarea>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+            Съгласен/на съм с
+            <a href="../terms_and_conditions/privacy.html" target="_blank">Политиката за поверителност</a>
+            и
+            <a href="../terms_and_conditions/terms.html" target="_blank">Общите условия</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Изпрати</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script defer src="../site-shell.js"></script>
+<script defer src="../script.js"></script>
+</body>
+</html>

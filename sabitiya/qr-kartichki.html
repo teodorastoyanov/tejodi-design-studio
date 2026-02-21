@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Дизайн на картички с QR кодове</title>
+<link href="../styles/lqvo-dqsno.css" rel="stylesheet"/>
+<link href="../images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Върни се на върха" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<div class="hero-content">
+<h1>QR картички</h1>
+<p>Покани любимите си хора да създадете заедно дигитален албум от събитието! Нашата QR картичка е не просто красива, а интерактивна – с едно сканиране отключвате споделено пространство за снимки, емоции и незабравими моменти.</p>
+<a class="cta-button" href="#contact">Изпратете запитване</a>
+</div>
+</section>
+<!-- Products -->
+<section class="products">
+<div class="product-card">
+<img alt="Картичка" src="../images/qr-kartichki/kartichka.png"/>
+<div class="product-info">
+<h2>QR картичка за събития</h2>
+<p>Стилна хартиена картичка с вграден QR код, който отвежда към специално създадено облачно пространство (Google Drive, Dropbox и др.). Всеки гост може лесно да качи свои снимки от събитието – сватба, рожден ден, абитуриентски бал или друго – и така всички спомени остават събрани на едно място.</p>
+</div>
+</div>
+</section>
+<!-- Price Section -->
+<section class="price-section">
+<h2>Цени</h2>
+<div class="price-table">
+
+<table>
+<tr class="currency-row">
+<td><h3>Цени за дизайн</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">лв</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="9.78" data-price-eur="5.00">
+<td>Едностранна картичка</td>
+<td><span>от </span><span class="price-value">5.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="15.65" data-price-eur="8.00">
+<td>Двустранна картичка</td>
+<td><span>от </span><span class="price-value">8.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+</table>
+
+
+<table>
+<tr class="currency-row">
+<td><h3>Цени за принтриране (1 лист - 9 броя)</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="1.96" data-price-eur="1.00">
+<td>Едностранна картичка</td>
+<td><span>от </span><span class="price-value">1.00</span> <span class="currency-symbol">€</span> / лист</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="3.91" data-price-eur="2.00">
+<td>Двустранна картичка</td>
+<td><span>от </span><span class="price-value">2.00</span> <span class="currency-symbol">€</span> / лист</td>
+</tr>
+
+</table>
+
+
+<table>
+<tr class="currency-row">
+<td><h3>Допълнителни услуги</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="0.98" data-price-eur="0.50">
+<td>Ламиниране (гланц/мат)</td>
+<td><span>+ </span><span class="price-value">0.50</span> <span class="currency-symbol">€</span> / лист</td>
+</tr>
+
+</table>
+
+</div>
+</section>
+
+<!-- Contact Form -->
+<section class="form form-styled" id="contact">
+<h2>Запитване за QR картички</h2>
+<form action="../api/contact.js" id="contactForm" method="POST">
+<div class="row personal-info">
+<input name="form_type" type="hidden" value="Форма кю ар картички"/>
+<input name="name" placeholder="Име" required="" type="text"/>
+<input name="surname" placeholder="Фамилия" required="" type="text"/>
+<input name="email" placeholder="Имейл" required="" type="email"/>
+<input name="phone" placeholder="Телефон (по желание)" type="tel"/>
+</div>
+<div>
+<textarea id="business-description" name="message" placeholder="Сподели ни детайли за събитието – ще се погрижим за всичко останало! Можем да персонализираме дизайна, посланието и да свържем QR кода с твоя споделена папка в облака (Google Drive, Dropbox и др.)."></textarea>
+</div>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+              Съгласен/на съм с
+              <a href="../terms_and_conditions/privacy.html" target="_blank">Политиката за поверителност</a>
+              и
+              <a href="../terms_and_conditions/terms.html" target="_blank">Общите условия</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Изпрати</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script defer src="../site-shell.js"></script>
+<script defer src="../script.js"></script>
+</body>
+</html>

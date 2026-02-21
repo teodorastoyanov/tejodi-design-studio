@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Tejodi Design Studio</title>
+<link href="../../styles/index.css" rel="stylesheet"/>
+<link href="../../images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+<!-- Back to top button -->
+<div id="top">
+<a aria-label="Back to top" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<h1>Designs for Your Special Event</h1>
+<p>From invitations and signs to guest favors – we create personalized products for weddings, birthdays, baptisms, corporate events, and more. Impress your guests with a unique style and attention to detail.</p>
+</section>
+<!-- Services Overview -->
+<section class="services-section" id="services">
+<h2 class="section-title">Services</h2>
+<div class="services-grid">
+<a class="service-link" href="pokani.html">
+<div class="service-card">
+<img alt="Invitations" src="../../images/ikoni_uslugi/pokani.svg"/>
+<h3>Invitations</h3>
+<p>Invitations for weddings, birthdays, baptisms, and other occasions.
+             A personalized design with attention to detail, tailored to the theme and style of your event.</p>
+</div>
+</a>
+<a class="service-link" href="qr-kartichki.html">
+<div class="service-card">
+<img alt="QR Cards" src="../../images/ikoni_uslugi/qr-kartichki.svg"/>
+<h3>QR Cards</h3>
+<p>Cards with a QR code leading to a cloud space where guests can upload and share photos from the event.
+             A perfect way to gather all memories in one place.</p>
+</div>
+</a>
+<a class="service-link" href="tabelki.html">
+<div class="service-card">
+<img alt="Signs" src="../../images/ikoni_uslugi/tabelki.svg"/>
+<h3>Signs</h3>
+<p>Table numbers, welcome signs, directional and decorative elements for event decor.
+             Made based on your idea and vision.</p>
+</div>
+</a>
+<a class="service-link" href="aksesoari.html">
+<div class="service-card">
+<img alt="Accessories" src="../../images/ikoni_uslugi/aksesoari.svg"/>
+<h3>Accessories</h3>
+<p>Accessories based on your idea – if you don’t see it on the site but you’re dreaming of it, this is the place.
+             Personalized wall decor, cupcake toppers, event decoration elements, and many more creative solutions.</p>
+</div>
+</a>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="form" id="contact">
+<h2>Get in touch</h2>
+<form action="../../api/contact.js" id="contactForm" method="POST">
+<div class="contact-row">
+<input name="form_type" type="hidden" value="Main form"/>
+<input name="name" placeholder="First name" required="" type="text"/>
+<input name="surname" placeholder="Last name" required="" type="text"/>
+<input name="email" placeholder="Email" required="" type="email"/>
+<input name="phone" placeholder="Phone (optional)" type="tel"/>
+</div>
+<textarea name="message" placeholder="Looking for something more special? If you can’t find the exact service you need - message me! There’s always room for new ideas. I’d love to discuss your idea and turn it into something real." required=""></textarea>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+            I agree to the <a href="../terms_and_conditions/privacy.html" target="_blank">Privacy Policy</a> and <a href="../terms_and_conditions/terms.html" target="_blank">Terms and Conditions</a>
+</label>
+</div>
+<button class="button-gradient" type="submit">Send</button>
+<p id="formMessage"></p>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script defer src="../../site-shell.js"></script>
+<script defer src="../../script.js"></script>
+</body>
+</html>

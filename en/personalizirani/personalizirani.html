@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Tejodi Design Studio</title>
+<link href="../../styles/index.css" rel="stylesheet"/>
+<link href="../../images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+<!-- Back to top button -->
+<div id="top">
+<a aria-label="Back to top" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<h1>Personalized Gifts and Products with a Unique Touch</h1>
+<p>Create something special for yourself or as a gift. From t-shirts and planners to calendars and cards - each item is crafted with attention to detail and your ideas.</p>
+</section>
+<!-- Services Overview -->
+<section class="services-section" id="services">
+<h2 class="section-title">Our Services</h2>
+<div class="services-grid">
+<a class="service-link" href="podaruci.html">
+<div class="service-card">
+<img alt="Gifts" src="../../images/ikoni_uslugi/podaruci.svg"/>
+<h3>Accessories and Gifts</h3>
+<p>Personalized gifts with character - suitable for birthdays, anniversaries, or special occasions. Choose a design, message, and style according to your idea.</p>
+</div>
+</a>
+<a class="service-link" href="drehi.html">
+<div class="service-card">
+<img alt="Clothing" src="../../images/ikoni_uslugi/drehi.svg"/>
+<h3>Clothing</h3>
+<p>Sweatshirts, t-shirts, and other textile products with custom designs. Add a name, inscription, illustration, or funny message - the choice is yours.</p>
+</div>
+</a>
+<a class="service-link" href="tetradki-planeri.html">
+<div class="service-card">
+<img alt="Notebooks and Planners" src="../../images/ikoni_uslugi/tetradki.svg"/>
+<h3>Notebooks and Planners</h3>
+<p>Beautiful and practical paper products with individual designs. Ideal as gifts or for personal notes and daily inspiration.</p>
+</div>
+</a>
+<a class="service-link" href="kalendari.html">
+<div class="service-card">
+<img alt="Calendars" src="../../images/ikoni_uslugi/kalendari.svg"/>
+<h3>Calendars</h3>
+<p>Personalized calendars with corporate branding or personal design. Practical and stylish - suitable as gifts or advertisements throughout the year.</p>
+</div>
+</a>
+<a class="service-link" href="kartichki.html">
+<div class="service-card">
+<img alt="Cards" src="../../images/ikoni_uslugi/kartichki.svg"/>
+<h3>Cards</h3>
+<p>Handmade and digital cards for any occasion - with personal wishes, names, or designs. Perfect as an addition to a gift.</p>
+</div>
+</a>
+<a class="service-link" href="knigorazdeliteli.html">
+<div class="service-card">
+<img alt="Bookmarks" src="../../images/ikoni_uslugi/knigorazdeliteli.svg"/>
+<h3>Bookmarks</h3>
+<p>Small but meaningful - personalized bookmarks with messages, names, or illustrations. Suitable for readers and gift sets.</p>
+</div>
+</a>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="form" id="contact">
+<h2>Contact Me</h2>
+<form action="../../api/contact.js" id="contactForm" method="POST">
+<div class="contact-row">
+<input name="form_type" type="hidden" value="Main form"/>
+<input name="name" placeholder="Name" required="" type="text"/>
+<input name="surname" placeholder="Surname" required="" type="text"/>
+<input name="email" placeholder="Email" required="" type="email"/>
+<input name="phone" placeholder="Phone (optional)" type="tel"/>
+</div>
+<textarea name="message" placeholder="Looking for something special? If you can't find the exact service you need - write to me! There's always room for new ideas. I’d be happy to discuss and realize your idea." required=""></textarea>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+            I agree with the <a href="../../terms_and_conditions/privacy.html" target="_blank">Privacy Policy</a> and <a href="../../terms_and_conditions/terms.html" target="_blank">Terms and Conditions</a>
+</label>
+</div>
+<button class="button-gradient" type="submit">Send</button>
+<p id="formMessage"></p>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script src="../../script.js"></script>
+<script defer="defer" src="../../site-shell.js"></script></body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Дизайн на аксесоари</title>
+<link href="../styles/lqvo-dqsno.css" rel="stylesheet"/>
+<link href="../images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Върни се на върха" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<div class="hero-content">
+<h1>Аксесоари и украси</h1>
+<p>Добави финалния щрих към всяко събитие с уникални, ръчно изработени декорации и персонализирани аксесоари, създадени специално за теб.</p>
+<a class="cta-button" href="#contact">Изпрати запитване</a>
+</div>
+</section>
+<!-- Products -->
+<section class="products">
+<div class="product-card">
+<img alt="Украси за мъфини" src="../images/qr-kartichki/gender-reveal.jpg"/>
+<div class="product-info">
+<h2>Украси за мъфини</h2>
+<p>Забавни и стилни топери за мъфини и десерти с имена, години, теми или илюстрации. Идеални за рождени дни, погачи, кръщенета и baby shower.</p>
+</div>
+</div>
+<div class="product-card reverse">
+<img alt="Стенни украси" src="../images/qr-kartichki/happy-birthday.jpg"/>
+<div class="product-info">
+<h2>Стенни украси</h2>
+<p>Банери с "Честит рожден ден", "Добре дошли", имена или други надписи. Могат да бъдат хартиени или дигитални за печат вкъщи.</p>
+</div>
+</div>
+<div class="product-card">
+<img alt="Украси за погача" src="../images/qr-kartichki/pogacha.png"/>
+<div class="product-info">
+<h2>Украси за погача</h2>
+<p>Табелки с името на бебето, месеците, пожелания или други детайли, съобразени с темата на събитието. Подходящи за маси и декорация.</p>
+</div>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="form form-styled" id="contact">
+<h2>Запитване за аксесоари и украси</h2>
+<form action="../api/contact.js" id="contactForm" method="POST">
+<div class="contact-row">
+<input name="form_type" type="hidden" value="Форма аксесоари"/>
+<input name="name" placeholder="Име" required="" type="text"/>
+<input name="surname" placeholder="Фамилия" required="" type="text"/>
+<input name="email" placeholder="Имейл" required="" type="email"/>
+<input name="phone" placeholder="Телефон (по желание)" type="tel"/>
+</div>
+<div>
+<textarea id="decor-description" name="message" placeholder="Разкажете ни какви аксесоари или украси търсите – какъв е поводът (рожден ден, погача, парти и т.н.), желан стил, цветове и послания, както и дали имате нужда от цялостна концепция или индивидуален елемент."></textarea>
+</div>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+          Съгласен/на съм с
+          <a href="../terms_and_conditions/privacy.html" target="_blank">Политиката за поверителност</a>
+          и
+          <a href="../terms_and_conditions/terms.html" target="_blank">Общите условия</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Изпрати</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script src="../script.js"></script>
+</main><script defer="defer" src="../site-shell.js"></script></body>
+</html>

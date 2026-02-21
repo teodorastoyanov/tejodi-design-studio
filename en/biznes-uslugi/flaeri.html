@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Flyer and Brochure Design</title>
+<link href="../../styles/bezkartini.css" rel="stylesheet"/>
+<link href="../../images/fav.svg" rel="icon"/>
+</head>
+<body>
+<div id="top">
+<a aria-label="Back to top" class="back-to-top" href="#top">↑</a>
+</div>
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<section class="hero-section" id="hero">
+<div class="hero-content">
+<h1>Flyers and Brochures</h1>
+<p>Choose the most suitable type of promotional materials and benefit from professional design and excellent print quality.</p>
+<a class="cta-button" href="#contact">Send Inquiry</a>
+</div>
+</section>
+<section class="price-section">
+<h2>Prices</h2>
+<div class="price-table">
+<table>
+<tr class="currency-row">
+<td><h3>Design Prices</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">BGN</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+<tr class="price-item" data-price-bgn="58.67" data-price-eur="30">
+<td>One-sided flyer</td>
+<td><span>from </span><span class="price-value">30.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="88.01" data-price-eur="45">
+<td>Two-sided flyer</td>
+<td><span>from </span><span class="price-value">45.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="136.91" data-price-eur="70">
+<td>Mini brochure (3 on one A4 sheet)</td>
+<td><span>from </span><span class="price-value">70.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="195.58" data-price-eur="100">
+<td>Standard brochure (A4)</td>
+<td><span>from </span><span class="price-value">100.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+<table>
+<tr class="currency-row">
+<td><h3>Print Prices (per piece)</h3></td>
+<td></td>
+</tr>
+<tr class="price-item" data-price-bgn="0.98" data-price-eur="0.50">
+<td>One-sided flyer (A5)</td>
+<td><span>from </span><span class="price-value">0.50</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="1.96" data-price-eur="1">
+<td>One-sided flyer (A4)</td>
+<td><span>from </span><span class="price-value">1.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="1.96" data-price-eur="1">
+<td>Two-sided flyer (A5)</td>
+<td><span>from </span><span class="price-value">1.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="2.93" data-price-eur="1.50">
+<td>Two-sided flyer (A4)</td>
+<td><span>from </span><span class="price-value">1.50</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="2.93" data-price-eur="1.50">
+<td>Mini brochure (3 on A4)</td>
+<td><span>from </span><span class="price-value">1.50</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="3.91" data-price-eur="2">
+<td>Standard brochure (A4)</td>
+<td><span>from </span><span class="price-value">2.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+<table>
+<tr class="currency-row">
+<td><h3>Additional Services</h3></td>
+<td></td>
+</tr>
+<tr>
+<td>Edits and corrections</td>
+<td>included in the price</td>
+</tr>
+<tr>
+<td>Print files (PDF, JPEG)</td>
+<td>included in the price</td>
+</tr>
+</table>
+</div>
+</section>
+<section aria-labelledby="form-title" class="form form-styled" id="contact">
+<h2 id="form-title">Inquiry for flyer and brochure production</h2>
+<form action="../../api/contact.js" id="contactForm" method="POST">
+<div class="form-box">
+<div class="row personal-info">
+<input name="form_type" type="hidden" value="Flyer/Brochure Form"/>
+<input name="First Name" placeholder="First Name" required="" type="text"/>
+<input name="Last Name" placeholder="Last Name" required="" type="text"/>
+<input name="Email" placeholder="Email" required="" type="email"/>
+<input name="Phone" placeholder="Phone (optional)" type="tel"/>
+</div>
+<div class="row form-options">
+<div class="column">
+<fieldset>
+<legend>Product Type</legend>
+<label><input name="Product Type" required="" type="radio" value="Flyer"/> Flyer</label>
+<label><input name="Product Type" type="radio" value="Brochure"/> Brochure</label>
+</fieldset>
+<fieldset>
+<legend>Size</legend>
+<label><input name="Size" required="" type="radio" value="A6"/> A6</label>
+<label><input name="Size" type="radio" value="A5"/> A5</label>
+<label><input name="Size" type="radio" value="A4"/> A4</label>
+<label><input name="Size" type="radio" value="Mini brochure (3 on A4)"/> Mini brochure (3 on A4)</label>
+</fieldset>
+</div>
+<div class="column">
+<fieldset>
+<legend>Print</legend>
+<label><input name="Print" required="" type="radio" value="One-sided"/> One-sided</label>
+<label><input name="Print" type="radio" value="Two-sided"/> Two-sided</label>
+</fieldset>
+<fieldset>
+<legend>Quantity</legend>
+<label><input name="Quantity" required="" type="radio" value="1-100"/> 1–100</label>
+<label><input name="Quantity" type="radio" value="101-250"/> 101–250</label>
+<label><input name="Quantity" type="radio" value="251-500"/> 251–500</label>
+<label><input name="Quantity" type="radio" value="500+"/> Over 500</label>
+</fieldset>
+</div>
+</div>
+<label for="additional-info">Additional Information</label>
+<textarea id="additional-info" name="Additional Information" placeholder="Describe content, style, preferred colors, logo or images to include, etc."></textarea>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+              I agree with the
+              <a href="../terms_and_conditions/privacy.html" target="_blank">Privacy Policy</a>
+              and
+              <a href="../terms_and_conditions/terms.html" target="_blank">Terms and Conditions</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Submit</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</div>
+</form>
+</section>
+<footer class="site-footer" id="site-footer"></footer>
+<script src="../../script.js"></script>
+<script defer="defer" src="../../site-shell.js"></script></body>
+</html>

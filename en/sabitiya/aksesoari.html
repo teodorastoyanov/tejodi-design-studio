@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Accessory Design</title>
+<link href="../../styles/lqvo-dqsno.css" rel="stylesheet"/>
+<link href="../../images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Back to top" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<div class="hero-content">
+<h1>Accessories &amp; Decorations</h1>
+<p>Add the finishing touch to any event with unique, handmade decorations and personalized accessories, created especially for you.</p>
+<a class="cta-button" href="#contact">Send an inquiry</a>
+</div>
+</section>
+<!-- Products -->
+<section class="products">
+<div class="product-card">
+<img alt="Cupcake decorations" src="../../images/qr-kartichki/gender-reveal.jpg"/>
+<div class="product-info">
+<h2>Cupcake decorations</h2>
+<p>Fun and stylish toppers for cupcakes and desserts with names, ages, themes, or illustrations. Perfect for birthdays, baby welcome parties, baptisms, and baby showers.</p>
+</div>
+</div>
+<div class="product-card reverse">
+<img alt="Wall decorations" src="../../images/qr-kartichki/happy-birthday.jpg"/>
+<div class="product-info">
+<h2>Wall decorations</h2>
+<p>Banners with "Happy Birthday", "Welcome", names, or other text. Available as paper versions or digital files for printing at home.</p>
+</div>
+</div>
+<div class="product-card">
+<img alt="Baby welcome party decorations" src="../../images/qr-kartichki/pogacha.png"/>
+<div class="product-info">
+<h2>Baby welcome party decorations</h2>
+<p>Signs with the baby’s name, monthly milestones, wishes, or other details, tailored to your event theme. Great for tables and decor.</p>
+</div>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="form form-styled" id="contact">
+<h2>Accessories &amp; decorations inquiry</h2>
+<form action="../../api/contact.js" id="contactForm" method="POST">
+<div class="contact-row">
+<input name="form_type" type="hidden" value="Accessories form"/>
+<input name="name" placeholder="First name" required="" type="text"/>
+<input name="surname" placeholder="Last name" required="" type="text"/>
+<input name="email" placeholder="Email" required="" type="email"/>
+<input name="phone" placeholder="Phone (optional)" type="tel"/>
+</div>
+<div>
+<textarea id="decor-description" name="message" placeholder="Tell us what accessories or decorations you’re looking for – what’s the occasion (birthday, baby welcome party, celebration, etc.), preferred style, colors, and messages, and whether you need a full concept or an individual item."></textarea>
+</div>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+          I agree to the
+          <a href="../terms_and_conditions/privacy.html" target="_blank">Privacy Policy</a>
+          and
+          <a href="../terms_and_conditions/terms.html" target="_blank">Terms and Conditions</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Send</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script src="../../script.js"></script>
+</main><script defer="defer" src="../../site-shell.js"></script></body>
+</html>

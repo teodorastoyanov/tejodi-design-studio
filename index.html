@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Tejodi Design Studio</title>
+<link href="styles/index.css" rel="stylesheet"/>
+<link href="images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+<!-- Back to top button -->
+<div id="top">
+<a aria-label="Върни се на върха" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<h1>Добре дошли в Tejodi Design Studio</h1>
+<p>Аз съм Теодора Стоянов – графичен дизайнер с внимание към детайла и индивидуалния стил.</p>
+</section>
+<!-- Services Overview -->
+<section class="services-section" id="services">
+<h2 class="section-title">Услуги</h2>
+<div class="services-grid">
+
+<a class="service-link" href="biznes-uslugi/sait.html">
+<div class="service-card">
+<img alt="Сайт" src="images/ikoni_uslugi/sait.svg"/>
+<h3>Сайт</h3>
+<p>Модерни и бързи уебсайтове, създадени да представят Вашия бизнес професионално онлайн. 
+                Оптимизирани за телефон и компютър, с ясен дизайн и лесна връзка с клиенти.</p>
+</div>
+</a>
+
+<a class="service-link" href="biznes-uslugi/vizitki.html">
+<div class="service-card">
+<img alt="Визитки" src="images/ikoni_uslugi/vizitki.svg"/>
+<h3>Визитки</h3>
+<p>Стилни и професионални визитки с персонализиран дизайн. 
+               Създайте първо впечатление, което оставя траен отпечатък.</p>
+</div>
+</a>
+<a class="service-link" href="biznes-uslugi/logo.html">
+<div class="service-card">
+<img alt="Лога" src="images/ikoni_uslugi/logo1.svg"/>
+<h3>Лога</h3>
+<p>Индивидуално изработени лога, които отразяват визията и стойностите на вашия бранд - от минимализъм до артистичност.</p>
+</div>
+</a>
+<a class="service-link" href="biznes-uslugi/flaeri.html">
+<div class="service-card">
+<img alt="Брошури" src="images/ikoni_uslugi/broshuri.svg"/>
+<h3>Брошури</h3>
+<p>Рекламни материали с професионален дизайн, ясна структура и силно визуално въздействие - идеални за кампании и събития.</p>
+</div>
+</a>
+<a class="service-link" href="personalizirani/podaruci.html">
+<div class="service-card">
+<img alt="Подаръци" src="images/ikoni_uslugi/podaruci.svg"/>
+<h3>Аксесоари и подаръци</h3>
+<p>Персонализирани подаръци за всеки повод - стилни, уникални и с емоционална стойност. Подходящи за лични и корпоративни поводи.</p>
+</div>
+</a>
+<a class="service-link" href="biznes-uslugi/tetradki-planeri.html">
+<div class="service-card">
+<img alt="Тетрадки и планери" src="images/ikoni_uslugi/tetradki.svg"/>
+<h3>Тетрадки и планери</h3>
+<p>Функционални и красиви хартиени изделия с индивидуален дизайн - перфектни за организация, вдъхновение или подарък.</p>
+</div>
+</a>
+<a class="service-link" href="personalizirani/drehi.html">
+<div class="service-card">
+<img alt="Дрехи" src="images/ikoni_uslugi/drehi.svg"/>
+<h3>Дрехи</h3>
+<p>Дизайн по поръчка за тениски, блузи и други текстилни артикули. Изразете своя стил или създайте запомнящ се подарък.</p>
+</div>
+</a>
+<a class="service-link" href="sabitiya/pokani.html">
+<div class="service-card">
+<img alt="Покани" src="images/ikoni_uslugi/pokani.svg"/>
+<h3>Покани</h3>
+<p>Уникални покани с индивидуален стил - хартиени или дигитални. Подходящи за сватби, балове, рождени дни и други празници.</p>
+</div>
+</a>
+<a class="service-link" href="personalizirani/kalendari.html">
+<div class="service-card">
+<img alt="Календари" src="images/ikoni_uslugi/kalendari.svg"/>
+<h3>Календари</h3>
+<p>Персонализирани календари с фирмен или личен дизайн - стилен и практичен подарък през цялата година.</p>
+</div>
+</a>
+<h2>И още много други продукти и услуги!</h2>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="form" id="contact">
+<h2>Свържете се с мен</h2>
+<form action="/../api/contact" id="contactForm" method="POST">
+<div class="contact-row">
+<input name="form_type" type="hidden" value="Форма основна"/>
+<input name="name" placeholder="Име" required="" type="text"/>
+<input name="surname" placeholder="Фамилия" required="" type="text"/>
+<input name="email" placeholder="Имейл" required="" type="email"/>
+<input name="phone" placeholder="Телефон (по желание)" type="tel"/>
+</div>
+<textarea name="message" placeholder="Търсите нещо по-специално? Ако не откривате точната услуга, която ви е необходима - пишете ми! Винаги има място за нови идеи. Ще се радвам да обсъдим идеята ви и да я превърнем в реалност." required=""></textarea>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+            Съгласен/на съм с <a href="terms_and_conditions/privacy.html" target="_blank">Политиката за поверителност</a> и <a href="terms_and_conditions/terms.html" target="_blank">Общите условия</a>
+</label>
+</div>
+<button class="button-gradient" type="submit">Изпрати</button>
+<p id="formMessage"></p>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script src="script.js"></script>
+<script defer="defer" src="site-shell.js"></script></body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Tejodi Design Studio</title>
+<link href="../styles/index.css" rel="stylesheet"/>
+<link href="../images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+<!-- Back to top button -->
+<div id="top">
+<a aria-label="Върни се на върха" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<h1>Персонализирани подаръци и продукти с уникален почерк</h1>
+<p>Създай нещо специално за себе си или за подарък. От тениски и планери до календари и картички - всеки артикул е изработен с внимание към детайла и твоите идеи.</p>
+</section>
+<!-- Services Overview -->
+<section class="services-section" id="services">
+<h2 class="section-title">Нашите услуги</h2>
+<div class="services-grid">
+<a class="service-link" href="podaruci.html">
+<div class="service-card">
+<img alt="Подаръци" src="../images/ikoni_uslugi/podaruci.svg"/>
+<h3>Аксесоари и подаръци</h3>
+<p>Персонализирани подаръци с характер - подходящи за рожден ден, годишнина или специален повод. Избери дизайн, послание и стил според своята идея.</p>
+</div>
+</a>
+<a class="service-link" href="drehi.html">
+<div class="service-card">
+<img alt="Дрехи" src="../images/ikoni_uslugi/drehi.svg"/>
+<h3>Дрехи</h3>
+<p>Блузи, тениски и други текстилни продукти с индивидуален дизайн. Добави име, надпис, илюстрация или забавно послание - изборът е твой.</p>
+</div>
+</a>
+<a class="service-link" href="tetradki-planeri.html">
+<div class="service-card">
+<img alt="Тетрадки и планери" src="../images/ikoni_uslugi/tetradki.svg"/>
+<h3>Тетрадки и планери</h3>
+<p>Красиви и практични хартиени изделия с индивидуален дизайн. Идеални за подарък или за лични бележки и вдъхновение в ежедневието.</p>
+</div>
+</a>
+<a class="service-link" href="kalendari.html">
+<div class="service-card">
+<img alt="Календари" src="../images/ikoni_uslugi/kalendari.svg"/>
+<h3>Календари</h3>
+<p>Персонализирани календари с фирмен брандинг или личен дизайн. Практични и стилни - подходящи за подарък или реклама през цялата година.</p>
+</div>
+</a>
+<a class="service-link" href="kartichki.html">
+<div class="service-card">
+<img alt="Картички" src="../images/ikoni_uslugi/kartichki.svg"/>
+<h3>Картички</h3>
+<p>Ръчно изработени и дигитални картички за всякакви поводи - с лично пожелание, име или дизайн. Перфектни за допълнение към подарък.</p>
+</div>
+</a>
+<a class="service-link" href="knigorazdeliteli.html">
+<div class="service-card">
+<img alt="Книгоразделители" src="../images/ikoni_uslugi/knigorazdeliteli.svg"/>
+<h3>Книгоразделители</h3>
+<p>Малки, но значими - персонализирани книгоразделители с послание, име или илюстрация. Подходящи за четящи хора и подаръчни комплекти.</p>
+</div>
+</a>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="form" id="contact">
+<h2>Свържи се с мен</h2>
+<form action="../api/contact.js" id="contactForm" method="POST">
+<div class="contact-row">
+<input name="form_type" type="hidden" value="Форма основна"/>
+<input name="name" placeholder="Име" required="" type="text"/>
+<input name="surname" placeholder="Фамилия" required="" type="text"/>
+<input name="email" placeholder="Имейл" required="" type="email"/>
+<input name="phone" placeholder="Телефон (по желание)" type="tel"/>
+</div>
+<textarea name="message" placeholder="Търсиш нещо специално? Ако не намираш точната услуга, която ти трябва - пиши ми! Винаги има място за нови идеи. Ще се радвам да обсъдим и реализираме твоята идея." required=""></textarea>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+            Съгласен/на съм с <a href="../terms_and_conditions/privacy.html" target="_blank">Политиката за поверителност</a> и <a href="../terms_and_conditions/terms.html" target="_blank">Общите условия</a>
+</label>
+</div>
+<button class="button-gradient" type="submit">Изпрати</button>
+<p id="formMessage"></p>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script defer src="../site-shell.js"></script>
+<script defer src="../script.js"></script>
+</body>
+</html>

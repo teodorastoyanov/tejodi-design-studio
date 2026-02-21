@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Дизайн на покани</title>
+<link href="../styles/lqvo-dqsno.css" rel="stylesheet"/>
+<link href="../images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Върни се на върха" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<div class="hero-content">
+<h1>Покани</h1>
+<p>Създай незабравимо първо впечатление с ръчно изработени и изцяло персонализирани покани за сватби, рождени дни, кръщенета и други събития.</p>
+<a class="cta-button" href="#contact">Изпратете запитване</a>
+</div>
+</section>
+<!-- Products -->
+<section class="products">
+<div class="product-card">
+<img alt="Едностранна покана" src="../images/pokani/ednostranna.svg"/>
+<div class="product-info">
+<h2>Едностранна покана</h2>
+<p>Минималистична и елегантна, подходяща за събития с модерен или класически стил.</p>
+</div>
+</div>
+<div class="product-card reverse">
+<img alt="Сгъваема покана" src="../images/pokani/dvustranna.svg"/>
+<div class="product-info">
+<h2>Сгъваема покана</h2>
+<p>С повече място за съдържание, като включва информация за събитието от вътрешната страна. Перфектна за сватби и кръщенета.</p>
+</div>
+</div>
+<div class="product-card">
+<img alt="В плик" src="../images/pokani/splik.svg"/>
+<div class="product-info">
+<h2>Допълнителни услуги</h2>
+<p>Можем да добавим каквато и да е персонализация на някои от нашите дизайни, или да създадем напълно нова покана специално за вас. Независимо дали става дума за цветове, шрифт, текст, илюстрация или тематика – всичко може да бъде адаптирано според вашите желания.</p>
+</div>
+</div>
+</section>
+<!-- Price Section -->
+<section class="price-section">
+<h2>Цени</h2>
+<div class="price-table">
+
+<table>
+<tr class="currency-row">
+<td><h3>Цени за дизайн</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">лв</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="15.65" data-price-eur="8.00">
+<td>Едностранна покана</td>
+<td><span>от </span><span class="price-value">8.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="29.34" data-price-eur="15.00">
+<td>Сгъваема покана</td>
+<td><span>от </span><span class="price-value">15.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="19.56" data-price-eur="10.00">
+<td>Индивидуален дизайн</td>
+<td><span>от </span><span class="price-value">10.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+
+
+<table>
+<tr class="currency-row">
+<td><h3>Цени за принтриране (един брой)</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="0.98" data-price-eur="0.50">
+<td>Едностранна покана</td>
+<td><span>от </span><span class="price-value">0.50</span> <span class="currency-symbol">€</span> / брой</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="1.96" data-price-eur="1.00">
+<td>Сгъваема покана</td>
+<td><span>от </span><span class="price-value">1.00</span> <span class="currency-symbol">€</span> / брой</td>
+</tr>
+</table>
+
+
+<table>
+<tr class="currency-row">
+<td><h3>Допълнителни услуги</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="1.96" data-price-eur="1.00">
+<td>Дигитален файл за изпращане по e-mail или чат</td>
+<td><span>+ </span><span class="price-value">1.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="0.98" data-price-eur="0.50">
+<td>Ламиниране (гланц/мат)</td>
+<td><span>+ </span><span class="price-value">0.50</span> <span class="currency-symbol">€</span> / брой</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="5.87" data-price-eur="3.00">
+<td>Гласово послание чрез QR код</td>
+<td><span>+ </span><span class="price-value">3.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="1.96" data-price-eur="1.00">
+<td>Луксозен плик (златен, перлен или релефен)</td>
+<td><span>+ </span><span class="price-value">1.00</span> <span class="currency-symbol">€</span> / брой</td>
+</tr>
+
+</table>
+</div>
+</section>
+
+<!-- Contact Form -->
+<section class="form form-styled" id="contact">
+<h2>Запитване за покани</h2>
+<form action="../api/contact.js" id="contactForm" method="POST">
+<div class="row personal-info">
+<input name="form_type" type="hidden" value="Форма покани"/>
+<input name="name" placeholder="Име" required="" type="text"/>
+<input name="surname" placeholder="Фамилия" required="" type="text"/>
+<input name="email" placeholder="Имейл" required="" type="email"/>
+<input name="phone" placeholder="Телефон (по желание)" type="tel"/>
+</div>
+<div>
+<textarea id="business-description" name="message" placeholder="Разкажете ни за вашето събитие – повод (сватба, рожден ден, кръщене и т.н.), предпочитан стил (напр. елегантен, винтидж, цветен), желани цветове, текст, който искате да включим, брой покани и дали желаете допълнителни услуги като персонализиране с име, луксозен плик или QR код с послание."></textarea>
+</div>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+              Съгласен/на съм с
+              <a href="../terms_and_conditions/privacy.html" target="_blank">Политиката за поверителност</a>
+              и
+              <a href="../terms_and_conditions/terms.html" target="_blank">Общите условия</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Изпрати</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script defer src="../site-shell.js"></script>
+<script defer src="../script.js"></script>
+</body>
+</html>

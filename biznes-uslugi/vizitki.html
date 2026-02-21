@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Дизайн на визитки</title>
+<link href="../styles/vizitki.css" rel="stylesheet"/>
+<link href="../images/fav.svg" rel="icon"/>
+</head>
+<body>
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Върни се на върха" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<div class="hero-content">
+<h1>Визитки</h1>
+<p>Създаваме персонализирани визитки, които отразяват уникалността на вашия бранд – от концепцията до печата и доставката.</p>
+<a class="cta-button" href="#contact">Изпратете запитване</a>
+</div>
+</section>
+<!-- Carousel -->
+<section id="products-preview">
+<h2>Примери от проекти</h2>
+<div class="carousel">
+<button aria-label="Предишен" class="carousel-prev">❮</button>
+<div class="carousel-track">
+<div class="carousel-card">
+<img alt="5" src="../images/vizitki/5.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="2" src="../images/vizitki/2.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="8" src="../images/vizitki/8.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="4" src="../images/vizitki/4.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="3" src="../images/vizitki/3.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="6" src="../images/vizitki/6.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="7" src="../images/vizitki/7.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="1" src="../images/vizitki/1.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="9" src="../images/vizitki/9.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="10" src="../images/vizitki/10.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="11" src="../images/vizitki/11.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="12" src="../images/vizitki/12.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="13" src="../images/vizitki/13.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="14" src="../images/vizitki/14.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="15" src="../images/vizitki/15.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="16" src="../images/vizitki/16.svg"/>
+</div>
+</div>
+<button aria-label="Следващ" class="carousel-next">❯</button>
+</div>
+</section>
+<!-- Pricing -->
+<section class="price-section" id="pricing">
+<h2>Цени</h2>
+<div class="price-table">
+<table>
+<tr class="currency-row">
+<td><h3>Цени за дизайн</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">лв</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="48.90" data-price-eur="25.00">
+<td>Едностранен дизайн</td>
+<td><span>от </span><span class="price-value">25.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="78.23" data-price-eur="40.00">
+<td>Двустранен дизайн</td>
+<td><span>от </span><span class="price-value">40.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="29.34" data-price-eur="15.00">
+<td>Редизайн на съществуваща визитка</td>
+<td><span>от </span><span class="price-value">15.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="9.78" data-price-eur="5.00">
+<td>Дизайн и подготовка за печат</td>
+<td><span>+ </span><span class="price-value">5.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+</table>
+
+
+<table>
+<tr class="currency-row">
+<td><h3>Допълнителни услуги</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="9.78" data-price-eur="5.00">
+<td>Добавяне на QR код</td>
+<td><span>+ </span><span class="price-value">5.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="234.70" data-price-eur="120.00">
+<td><a href="logo.html">Създаване на лого</a></td>
+<td><span>от </span><span class="price-value">120.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="9.78" data-price-eur="5.00">
+<td>Допълнителна ревизия</td>
+<td><span>+ </span><span class="price-value">5.00</span> <span class="currency-symbol">€</span> / брой</td>
+</tr>
+
+<tr class="price-item">
+<td>До 3 ревизии</td>
+<td>включени в цената</td>
+</tr>
+
+</table>
+</div>
+</section>
+
+<!-- Contact Form -->
+<section class="form form-styled" id="contact">
+<h2>Запитване за изработка на визитки</h2>
+<form action="../api/contact.js" id="contactForm" method="POST">
+<div class="row personal-info">
+<input name="form_type" type="hidden" value="Форма визитки"/>
+<input name="Име" placeholder="Име" required="" type="text"/>
+<input name="Фамилия" placeholder="Фамилия" required="" type="text"/>
+<input name="Имейл" placeholder="Имейл" required="" type="email"/>
+<input name="Телефон" placeholder="Телефон (по желание)" type="tel"/>
+</div>
+<div class="row form-options">
+<div class="column">
+<label for="paper-type">Вид хартия:</label>
+<select id="paper-type" name="Хартия" required="">
+<option value="">-- Изберете --</option>
+<option>Мат (350gsm)</option>
+<option>Гланц (300gsm)</option>
+<option>Перлен картон</option>
+<option>Рециклирана хартия</option>
+<option>Текстурирана хартия</option>
+<option>Друго</option>
+</select>
+<fieldset>
+<legend>Количество:</legend>
+<label><input name="Бройка" required="" type="radio" value="1-80"/> 1–80</label>
+<label><input name="Бройка" type="radio" value="81-160"/> 81–160</label>
+<label><input name="Бройка" type="radio" value="161-240"/> 161–240</label>
+<label><input name="Бройка" type="radio" value="240+"/> Над 240</label>
+</fieldset>
+</div>
+<div class="column">
+<fieldset>
+<legend>Страни за печат:</legend>
+<label><input name="Печат" required="" type="radio" value="Едностранна"/> Едностранна</label>
+<label><input name="Печат" type="radio" value="Двустранна"/> Двустранна</label>
+</fieldset>
+<fieldset>
+<legend>Формат:</legend>
+<label><input name="Формат[]" type="checkbox" value="Хоризонтална"/> Хоризонтална</label>
+<label><input name="Формат[]" type="checkbox" value="Вертикална"/> Вертикална</label>
+<label><input name="Формат[]" type="checkbox" value="Европейски стандарт 85мм x 55мм"/> Европейски стандарт 85мм x 55мм</label>
+<label><input name="Формат[]" type="checkbox" value="Американски стандарт"/> Американски стандарт 89мм х 51мм</label>
+</fieldset>
+</div>
+</div>
+<div>
+<label for="additional-info">Допълнителна информация:</label>
+<textarea id="additional-info" name="Допълнителна информация" placeholder="Ако имате конкретни лога, шрифтове или изображения, които искате да включим, или специални изисквания към дизайна, моля опишете ги тук."></textarea>
+</div>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+            Съгласен/на съм с
+            <a href="../terms_and_conditions/privacy.html" target="_blank">Политиката за поверителност</a>
+            и
+            <a href="../terms_and_conditions/terms.html" target="_blank">Общите условия</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Изпрати</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script defer src="../site-shell.js"></script>
+<script defer src="../script.js"></script>
+</body>
+</html>

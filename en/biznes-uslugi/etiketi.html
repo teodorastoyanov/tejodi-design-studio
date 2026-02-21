@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Label Design</title>
+<link href="../../styles/prosta.css" rel="stylesheet"/>
+<link href="../../images/fav.svg" rel="icon"/>
+</head>
+<body>
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Back to top" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<!-- Hero Section -->
+<section class="hero-section" id="hero">
+<div class="hero-content">
+<h1>Labels</h1>
+<p>
+          We create labels in all sizes – from full A4 sheets to mini labels, fitting up to 20 per sheet.
+          We offer a variety of shapes, papers, and finishes.
+          The price depends on the complexity of the design, size, and quantity.
+        </p>
+<a class="cta-button" href="#contact">Send Inquiry</a>
+</div>
+</section>
+<!-- Price Section -->
+<section class="price-section">
+<h2>Pricing</h2>
+<div class="price-table">
+
+<table>
+<tr class="currency-row">
+<td><h3>Design pricing</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">BGN</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="29.34" data-price-eur="15.00">
+<td>Basic design (text + simple frame or logo)</td>
+<td><span>from </span><span class="price-value">15.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="39.12" data-price-eur="20.00">
+<td>Medium complexity (colored background, typography, graphics)</td>
+<td><span>from </span><span class="price-value">20.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="58.67" data-price-eur="30.00">
+<td>Complex/illustrative design (drawings, multicolor design, personalization)</td>
+<td><span>from </span><span class="price-value">30.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+
+<table>
+<tr class="currency-row">
+<td><h3>Printing pricing (per piece)</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="1.96" data-price-eur="1.00">
+<td>A4</td>
+<td><span>from </span><span class="price-value">1.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+
+<table>
+<tr class="currency-row">
+<td><h3>Additional services</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="5.87" data-price-eur="3.00">
+<td>Adding a QR code, serial number, or custom text</td>
+<td><span>+ </span><span class="price-value">3.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+
+</div>
+</section>
+<!-- Contact Form -->
+<section class="form" id="contact">
+<h2>Inquiry for Label Production</h2>
+<form action="../../api/contact.js" id="contactForm" method="POST">
+<div class="contact-row">
+<input name="form_type" type="hidden" value="Labels Form"/>
+<input name="name" placeholder="First Name" required="" type="text"/>
+<input name="surname" placeholder="Last Name" required="" type="text"/>
+<input name="email" placeholder="Email" required="" type="email"/>
+<input name="phone" placeholder="Phone (optional)" type="tel"/>
+</div>
+<textarea id="business-description" name="message" placeholder="Describe the number of labels, preferred design (simple, medium, complex), need for QR code or personalization, and any other requirements."></textarea>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+            I agree with the
+            <a href="../terms_and_conditions/privacy.html" target="_blank">Privacy Policy</a>
+            and
+            <a href="../terms_and_conditions/terms.html" target="_blank">Terms and Conditions</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Send</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script src="../../script.js"></script>
+<script defer="defer" src="../../site-shell.js"></script></body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Calendar Design</title>
+<link href="../../styles/lqvo-dqsno.css" rel="stylesheet"/>
+<link href="../../images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Back to top" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<div class="hero-content">
+<h1>Calendars</h1>
+<p>We offer a wide range of personalized calendars – desktop, wall, and hanging, with your photos. Options include moon phases, holidays, important dates, and even lamination for writing and erasing.</p>
+<a class="cta-button" href="#contact">Send Inquiry</a>
+</div>
+</section>
+<!-- Products -->
+<section class="products">
+<div class="product-card">
+<img alt="Desktop Calendar" src="../../images/kalendari/nastolen.png"/>
+<div class="product-info">
+<h2>Triangular Desktop Calendar</h2>
+<p>Compact and stable, ideal for a desk or office.</p>
+</div>
+</div>
+<div class="product-card reverse">
+<img alt="12-page Calendar" src="../../images/kalendari/nastolen.png"/>
+<div class="product-info">
+<h2>12-page Calendar</h2>
+<p>Small and convenient, one month per page, available in A5 and A4 formats.</p>
+</div>
+</div>
+<div class="product-card">
+<img alt="Hanging Calendar" src="../../images/kalendari/nastolen.png"/>
+<div class="product-info">
+<h2>Hanging Calendar</h2>
+<p>Larger format with space for photos and more details, available in A5 and A4 sizes.</p>
+</div>
+</div>
+</section>
+<!-- Price Section -->
+<section class="price-section">
+<h2>Prices</h2>
+<div class="price-table">
+<table>
+<tr class="currency-row">
+<td><h3>Prices per unit (design + print)</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">BGN</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+<tr class="price-item" data-price-bgn="17.60" data-price-eur="9">
+<td>Triangular Desktop Calendar</td>
+<td><span>from </span><span class="price-value">9.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="19.56" data-price-eur="10">
+<td>A5 12-page Calendar</td>
+<td><span>from </span><span class="price-value">10.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="23.47" data-price-eur="12">
+<td>A5 Hanging Calendar</td>
+<td><span>from </span><span class="price-value">12.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="27.38" data-price-eur="14">
+<td>A4 12-page Calendar</td>
+<td><span>from </span><span class="price-value">14.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="31.29" data-price-eur="16">
+<td>A4 Hanging Calendar</td>
+<td><span>from </span><span class="price-value">16.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+<table>
+<tr class="currency-row">
+<td><h3>Additional Services</h3></td>
+<td></td>
+</tr>
+<tr class="price-item" data-price-bgn="3.91" data-price-eur="2">
+<td>Add moon phases to the calendar</td>
+<td><span>+ </span><span class="price-value">2.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="3.91" data-price-eur="2">
+<td>Include important dates (holidays, personal occasions)</td>
+<td><span>+ </span><span class="price-value">2.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="9.78" data-price-eur="5">
+<td>Lamination (write and erase)</td>
+<td><span>+ </span><span class="price-value">5.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="form" id="contact">
+<h2>Calendar Inquiry</h2>
+<form action="../../api/contact.js" id="contactForm" method="POST">
+<div class="contact-row">
+<input name="form_type" type="hidden" value="Calendar Form"/>
+<input name="name" placeholder="First Name" required="" type="text"/>
+<input name="surname" placeholder="Last Name" required="" type="text"/>
+<input name="email" placeholder="Email" required="" type="email"/>
+<input name="phone" placeholder="Phone (optional)" type="tel"/>
+</div>
+<textarea id="business-description" name="message" placeholder="Tell us the calendar type, preferred design (standard or custom), any extras like dates, moon phases, lamination, and quantity."></textarea>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+              I agree with the
+              <a href="../terms_and_conditions/privacy.html" target="_blank">Privacy Policy</a>
+              and
+              <a href="../terms_and_conditions/terms.html" target="_blank">Terms and Conditions</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Send</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script src="../../script.js"></script>
+<script defer="defer" src="../../site-shell.js"></script></body>
+</html>

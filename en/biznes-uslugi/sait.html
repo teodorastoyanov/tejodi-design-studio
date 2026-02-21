@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Social Media Ad Design</title>
+<link href="../../styles/prosta.css" rel="stylesheet"/>
+<link href="../../images/fav.svg" rel="icon"/>
+</head>
+<body>
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Back to top" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<!-- Hero Section -->
+<section class="hero-section" id="hero">
+<div class="hero-content">
+<h1>Website for Your Business</h1>
+<p>A fast, modern, and user-friendly website that looks professional on both mobile and desktop. Suitable for salons, shops, services, personal brands, and portfolios.</p>
+<a class="cta-button" href="#portfolio">View examples</a>
+<a class="cta-button" href="#contact">Send an inquiry</a>
+</div>
+</section>
+<!--Examples-->
+<section class="portfolio-section" id="portfolio">
+  <h2>Website examples</h2>
+  <p class="muted">Click on an example to open it.</p>
+
+  <div class="portfolio-grid">
+    <a class="portfolio-card" href="https://clean-beauty-studio-starter.vercel.app" target="_blank" rel="noopener">
+      <img src="../images/site-examples/clean.jpg" alt="Clean Beauty Studio – example website" loading="lazy">
+      <div class="portfolio-meta">
+        <h3>Clean Beauty Studio</h3>
+        <span>Minimal style • salon</span>
+      </div>
+    </a>
+
+    <a class="portfolio-card" href="https://luxe-beauty-studio-starter.vercel.app" target="_blank" rel="noopener">
+      <img src="../images/site-examples/luxe.jpg" alt="Luxe Beauty Studio – example website" loading="lazy">
+      <div class="portfolio-meta">
+        <h3>Luxe Beauty Studio</h3>
+        <span>Luxury style • salon</span>
+      </div>
+    </a>
+
+    <a class="portfolio-card" href="https://beauty-studio-starter.vercel.app" target="_blank" rel="noopener">
+      <img src="../images/site-examples/classic.jpg" alt="Beauty Studio – example website" loading="lazy">
+      <div class="portfolio-meta">
+        <h3>Beauty Studio</h3>
+        <span>Classic style • salon</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- Price Section -->
+<section class="price-section">
+<h2>Pricing</h2>
+<div class="price-table">
+
+<table>
+<tr class="currency-row">
+<td><h3>One-time services</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">BGN</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="430.28" data-price-eur="220.00">
+<td>One-page website (home + services + contacts)</td>
+<td><span>from </span><span class="price-value">220.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="762.77" data-price-eur="390.00">
+<td>Multi-page website (up to 5 pages)</td>
+<td><span>from </span><span class="price-value">390.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="293.37" data-price-eur="150.00">
+<td>Landing page (campaign/service)</td>
+<td><span>from </span><span class="price-value">150.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+
+
+<table>
+<tr class="currency-row">
+<td><h3>Packages</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="566.19" data-price-eur="290.00">
+<td>Starter - One-page + basic SEO + form</td>
+<td><span>from </span><span class="price-value">290.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="1036.59" data-price-eur="530.00">
+<td>Business - Up to 5 pages + gallery + blog</td>
+<td><span>from </span><span class="price-value">530.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="1564.66" data-price-eur="800.00">
+<td>Premium - Bookings, calendar, multilingual support, integrations</td>
+<td><span>from </span><span class="price-value">800.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+
+
+<table>
+<tr class="currency-row">
+<td><h3>Additional services</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="195.58" data-price-eur="100.00">
+<td>SEO package</td>
+<td><span>+ </span><span class="price-value">100.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="58.67" data-price-eur="30.00">
+<td>Monthly maintenance</td>
+<td><span>+ </span><span class="price-value">30.00</span> <span class="currency-symbol">€</span> / month</td>
+</tr>
+
+</table>
+
+</div>
+</section>
+
+<!-- Contact Form -->
+<section class="form" id="contact">
+<h2>Inquiry for Ads</h2>
+<form action="../../api/contact.js" id="contactForm" method="POST">
+<div class="contact-row">
+<input name="form_type" type="hidden" value="Ad Form"/>
+<input name="name" placeholder="First Name" required="" type="text"/>
+<input name="surname" placeholder="Last Name" required="" type="text"/>
+<input name="email" placeholder="Email" required="" type="email"/>
+<input name="phone" placeholder="Phone (optional)" type="tel"/>
+</div>
+<textarea id="business-description" name="message" placeholder="Describe your business, what type of website you want (one-page or multi-page), whether you have a logo/colors, what sections you need (services, gallery, pricing, contacts), and links to websites you like."></textarea>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+            I agree to the
+            <a href="../terms_and_conditions/privacy.html" target="_blank">Privacy Policy</a>
+            and
+            <a href="../terms_and_conditions/terms.html" target="_blank">Terms and Conditions</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Send</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script src="../../script.js"></script>
+<script defer="defer" src="../../site-shell.js"></script></body>
+</html>
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Social Media Ads Design</title>
+<link href="../../styles/prosta.css" rel="stylesheet"/>
+<link href="../../images/fav.svg" rel="icon"/>
+</head>
+<body>
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Back to top" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<!-- Hero Section -->
+<section class="hero-section" id="hero">
+<div class="hero-content">
+<h1>Social Media Ads</h1>
+<p>Express your brand with creative and professionally designed ads. Suitable for Instagram, Facebook, LinkedIn, and other platforms.</p>
+<a class="cta-button" href="#contact">Send Inquiry</a>
+</div>
+</section>
+<!-- Price Section -->
+<section class="price-section">
+<h2>Prices</h2>
+<div class="price-table">
+<table>
+<tr class="currency-row">
+<td><h3>Single Ads</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">BGN</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+<tr class="price-item" data-price-bgn="29.34" data-price-eur="15">
+<td>Static Ad (one image + text)</td>
+<td><span>from </span><span class="price-value">15.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="58.67" data-price-eur="30.00">
+<td>Carousel (up to 5 images)</td>
+<td><span>from </span><span class="price-value">30.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="48.90" data-price-eur="25">
+<td>Infographic</td>
+<td><span>from </span><span class="price-value">25.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="19.56" data-price-eur="10">
+<td>Instagram Story Design</td>
+<td><span>from </span><span class="price-value">10.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="39.12" data-price-eur="20">
+<td>Facebook Cover / LinkedIn Header</td>
+<td><span>from </span><span class="price-value">20.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+<table>
+<tr class="currency-row">
+<td><h3>Packages</h3></td>
+<td></td>
+</tr>
+<tr class="price-item" data-price-bgn="97.79" data-price-eur="50">
+<td>4 Ads Package (weekly)</td>
+<td><span>от </span><span class="price-value">50.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="254.26" data-price-eur="130">
+<td>12 Ads Package (monthly, 3 posts/week)</td>
+<td><span>от </span><span class="price-value">130.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="371.61" data-price-eur="190">
+<td>20 Ads Package (intensive month)</td>
+<td><span>от </span><span class="price-value">190.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+<table>
+<tr class="currency-row">
+<td><h3>Additional Services</h3></td>
+<td></td>
+</tr>
+<tr class="price-item" data-price-bgn="29.34" data-price-eur="15">
+<td>Animated Ad / Light Motion (GIF or video)</td>
+<td><span>+ </span><span class="price-value">15.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="9.78" data-price-eur="5">
+<td>Print File Preparation</td>
+<td><span>+ </span><span class="price-value">5.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="form" id="contact">
+<h2>Inquiry for Ads</h2>
+<form action="../../api/contact.js" id="contactForm" method="POST">
+<div class="contact-row">
+<input name="form_type" type="hidden" value="Ad Form"/>
+<input name="name" placeholder="First Name" required="" type="text"/>
+<input name="surname" placeholder="Last Name" required="" type="text"/>
+<input name="email" placeholder="Email" required="" type="email"/>
+<input name="phone" placeholder="Phone (optional)" type="tel"/>
+</div>
+<textarea id="business-description" name="message" placeholder="Describe your business, target audience, preferred ad style, content type (product photos, offers, infographics, etc.), and the number of ads you want."></textarea>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+            I agree to the
+            <a href="../terms_and_conditions/privacy.html" target="_blank">Privacy Policy</a>
+            and
+            <a href="../terms_and_conditions/terms.html" target="_blank">Terms and Conditions</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Send</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script src="../../script.js"></script>
+<script defer="defer" src="../../site-shell.js"></script></body>
+</html>

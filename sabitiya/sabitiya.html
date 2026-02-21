@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Tejodi Design Studio</title>
+<link href="../styles/index.css" rel="stylesheet"/>
+<link href="../images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+<!-- Back to top button -->
+<div id="top">
+<a aria-label="Върни се на върха" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<h1>Дизайни за твоето специално събитие</h1>
+<p>От покани и табели до подаръчета за гости – създаваме персонализирани продукти за сватби, рождени дни, кръщенета, фирмени събития и още. Впечатли гостите си с уникален стил и внимание към детайла.</p>
+</section>
+<!-- Services Overview -->
+<section class="services-section" id="services">
+<h2 class="section-title">Услуги</h2>
+<div class="services-grid">
+<a class="service-link" href="pokani.html">
+<div class="service-card">
+<img alt="Покани" src="../images/ikoni_uslugi/pokani.svg"/>
+<h3>Покани</h3>
+<p>Покани за сватби, рождени дни, кръщенета и други поводи.
+             Персонализиран дизайн с внимание към детайла, съобразен с темата и стила на събитието.</p>
+</div>
+</a>
+<a class="service-link" href="qr-kartichki.html">
+<div class="service-card">
+<img alt="QR картички" src="../images/ikoni_uslugi/qr-kartichki.svg"/>
+<h3>QR картички</h3>
+<p>Картички с QR код, водещ към облачно пространство, където гостите могат да качват и споделят снимки от събитието. 
+             Перфектен начин да събереш всички спомени на едно място.</p>
+</div>
+</a>
+<a class="service-link" href="tabelki.html">
+<div class="service-card">
+<img alt="Табелки" src="../images/ikoni_uslugi/tabelki.svg"/>
+<h3>Табелки</h3>
+<p>Номера за маси, табелки за добре дошли, указателни и декоративни елементи за декорация на събития.
+             Изработка по твоя идея и визия.</p>
+</div>
+</a>
+<a class="service-link" href="aksesoari.html">
+<div class="service-card">
+<img alt="Аксесоари" src="../images/ikoni_uslugi/aksesoari.svg"/>
+<h3>Аксесоари</h3>
+<p>Аксесоари по твоя идея – ако не го виждаш в сайта, но го мечтаеш, тук му е мястото.
+             Персонализирани декорации за стена, клечки за мъфини, елементи за украса на събития и още много креативни решения.</p>
+</div>
+</a>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="form" id="contact">
+<h2>Свържете се с мен</h2>
+<form action="../api/contact.js" id="contactForm" method="POST">
+<div class="contact-row">
+<input name="form_type" type="hidden" value="Форма основна"/>
+<input name="name" placeholder="Име" required="" type="text"/>
+<input name="surname" placeholder="Фамилия" required="" type="text"/>
+<input name="email" placeholder="Имейл" required="" type="email"/>
+<input name="phone" placeholder="Телефон (по желание)" type="tel"/>
+</div>
+<textarea name="message" placeholder="Търсиш нещо по-специално? Ако не откриваш точната услуга, която ти трябва - пиши ми! Винаги има място за нови идеи. Ще се радвам да обсъдим идеята ти и да я превърнем в нещо реално." required=""></textarea>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+            Съгласен/на съм с <a href="../terms_and_conditions/privacy.html" target="_blank">Политиката за поверителност</a> и <a href="../terms_and_conditions/terms.html" target="_blank">Общите условия</a>
+</label>
+</div>
+<button class="button-gradient" type="submit">Изпрати</button>
+<p id="formMessage"></p>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script defer src="../site-shell.js"></script>
+<script defer src="../script.js"></script>
+</body>
+</html>

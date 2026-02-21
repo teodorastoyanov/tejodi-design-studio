@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Business Card Design</title>
+<link href="../../styles/vizitki.css" rel="stylesheet"/>
+<link href="../../images/fav.svg" rel="icon"/>
+</head>
+<body>
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Back to top" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<div class="hero-content">
+<h1>Business Cards</h1>
+<p>We create personalized business cards that reflect your brand’s uniqueness – from concept to printing and delivery.</p>
+<a class="cta-button" href="#contact">Send Inquiry</a>
+</div>
+</section>
+<!-- Carousel -->
+<section id="products-preview">
+<h2>Project Examples</h2>
+<div class="carousel">
+<button aria-label="Предишен" class="carousel-prev">❮</button>
+<div class="carousel-track">
+<div class="carousel-card">
+<img alt="5" src="../../images/vizitki/5.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="2" src="../../images/vizitki/2.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="8" src="../../images/vizitki/8.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="4" src="../../images/vizitki/4.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="3" src="../../images/vizitki/3.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="6" src="../../images/vizitki/6.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="7" src="../../images/vizitki/7.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="1" src="../../images/vizitki/1.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="9" src="../../images/vizitki/9.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="10" src="../../images/vizitki/10.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="11" src="../../images/vizitki/11.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="12" src="../../images/vizitki/12.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="13" src="../../images/vizitki/13.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="14" src="../../images/vizitki/14.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="15" src="../../images/vizitki/15.svg"/>
+</div>
+<div class="carousel-card">
+<img alt="16" src="../../images/vizitki/16.svg"/>
+</div>
+</div>
+<button aria-label="Next" class="carousel-next">❯</button>
+</div>
+</section>
+<!-- Pricing -->
+<section class="price-section" id="pricing">
+<h2>Prices</h2>
+<div class="price-table">
+<table>
+<tr class="currency-row">
+<td><h3>Design Prices</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">BGN</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+<tr class="price-item" data-price-bgn="48.90" data-price-eur="25">
+<td>Single-sided design</td>
+<td><span>from </span><span class="price-value">25.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="78.23" data-price-eur="40">
+<td>Double-sided design</td>
+<td><span>from </span><span class="price-value">40.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="29.34" data-price-eur="15">
+<td>Redesign of existing business card</td>
+<td><span>from </span><span class="price-value">15.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="9.78" data-price-eur="5">
+<td>Design and print preparation</td>
+<td><span>+ </span><span class="price-value">5.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+<table>
+<tr class="currency-row">
+<td><h3>Additional Services</h3></td>
+<td></td>
+</tr>
+<tr class="price-item" data-price-bgn="9.78" data-price-eur="5">
+<td>Adding QR code</td>
+<td><span>+ </span><span class="price-value">5.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="234.70" data-price-eur="120">
+<td><a href="logo.html">Logo creation</a></td>
+<td><span>from </span><span class="price-value">120.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="9.78" data-price-eur="5">
+<td>Additional revision</td>
+<td><span>+ </span><span class="price-value">5</span> <span class="currency-symbol">€</span> / piece</td>
+</tr>
+<tr class="price-item">
+<td>Up to 3 revisions</td>
+<td>included in price</td>
+</tr>
+</table>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="form form-styled" id="contact">
+<h2>Business Card Order Inquiry</h2>
+<form action="../../api/contact.js" id="contactForm" method="POST">
+<div class="row personal-info">
+<input name="form_type" type="hidden" value="Business Card Form"/>
+<input name="Name" placeholder="Name" required="" type="text"/>
+<input name="Surname" placeholder="Surname" required="" type="text"/>
+<input name="Email" placeholder="Email" required="" type="email"/>
+<input name="Phone" placeholder="Phone (optional)" type="tel"/>
+</div>
+<div class="row form-options">
+<div class="column">
+<label for="paper-type">Paper type:</label>
+<select id="paper-type" name="Paper" required="">
+<option value="">-- Select --</option>
+<option>Matte (350gsm)</option>
+<option>Glossy (300gsm)</option>
+<option>Pearl cardboard</option>
+<option>Recycled paper</option>
+<option>Textured paper</option>
+<option>Other</option>
+</select>
+<fieldset>
+<legend>Quantity:</legend>
+<label><input name="Quantity" required="" type="radio" value="1-80"/> 1–80</label>
+<label><input name="Quantity" type="radio" value="81-160"/> 81–160</label>
+<label><input name="Quantity" type="radio" value="161-240"/> 161–240</label>
+<label><input name="Quantity" type="radio" value="240+"/> Over 240</label>
+</fieldset>
+</div>
+<div class="column">
+<fieldset>
+<legend>Sides to print:</legend>
+<label><input name="Print" required="" type="radio" value="Single-sided"/> Single-sided</label>
+<label><input name="Print" type="radio" value="Double-sided"/> Double-sided</label>
+</fieldset>
+<fieldset>
+<legend>Format:</legend>
+<label><input name="Format[]" type="checkbox" value="Horizontal"/> Horizontal</label>
+<label><input name="Format[]" type="checkbox" value="Vertical"/> Vertical</label>
+<label><input name="Format[]" type="checkbox" value="European standard 85mm x 55mm"/> European standard 85mm x 55mm</label>
+<label><input name="Format[]" type="checkbox" value="American standard"/> American standard 89mm x 51mm</label>
+</fieldset>
+</div>
+</div>
+<div>
+<label for="additional-info">Additional information:</label>
+<textarea id="additional-info" name="Additional Information" placeholder="If you have specific logos, fonts, or images you want us to include, or special design requirements, please describe them here."></textarea>
+</div>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+            I agree with
+            <a href="../terms_and_conditions/privacy.html" target="_blank">Privacy Policy</a>
+            and
+            <a href="../terms_and_conditions/terms.html" target="_blank">Terms and Conditions</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Send</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script src="../../script.js"></script>
+<script defer="defer" src="../../site-shell.js"></script></body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Notebook and Planner Design</title>
+<link href="../../styles/lqvo-dqsno.css" rel="stylesheet"/>
+<link href="../../images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+<body class="tetradki-planeri">
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Back to top" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<div class="hero-content">
+<h1>Notebooks and Planners</h1>
+<p>Beautiful and personalized notebooks and planners created to inspire your daily life. Suitable as a gift or for personal enjoyment.</p>
+<a class="cta-button" href="#contact">Send Inquiry</a>
+</div>
+</section>
+<!-- Products Preview -->
+<section class="products">
+<div class="product-card">
+<img alt="My Pregnancy Planner" src="../../images/tetradki/bremennost.png"/>
+<div class="product-info">
+<h2>My Pregnancy Planner</h2>
+<p>Personalized planner for expectant mothers with sections for medical notes, photos, emotions, and important moments. A5 size, 76 pages.</p>
+</div>
+</div>
+<div class="product-card reverse">
+<img alt="Financial Planner" src="../../images/tetradki/finansov.png"/>
+<div class="product-info">
+<h2>Financial Planner</h2>
+<p>Organize your finances easily and effectively – budget, expenses, savings, and goals combined in a stylish and functional planner. A5 size, 56 pages.</p>
+</div>
+</div>
+<div class="product-card">
+<img alt="School Notebooks" src="../../images/tetradki/uchilishte.png"/>
+<div class="product-info">
+<h2>School Notebooks</h2>
+<p>Bright and unique notebooks with individual designs by subject or style. Suitable for children and students. A5 size, 60–100 pages.</p>
+</div>
+</div>
+<div class="product-card reverse">
+<img alt="Personal Diary" src="../../images/tetradki/planer.png"/>
+<div class="product-info">
+<h2>Personal Diary</h2>
+<p>Record your thoughts and memories or keep a personal journal. Can feature inspiring covers, quotes, and personalized names. A5 size.</p>
+</div>
+</div>
+<div class="product-card">
+<img alt="Travel Journal" src="../../images/tetradki/planer.png"/>
+<div class="product-info">
+<h2>Travel Journal</h2>
+<p>Preserve memories from every trip – pages for places, photos, experiences, ratings, and recommendations. A stylish gift for travelers. A5 size.</p>
+</div>
+</div>
+</section>
+<!-- Price Section -->
+<section class="price-section">
+<h2>Prices</h2>
+<div class="price-table">
+<table>
+<tr class="currency-row">
+<td><h3>Printing Prices (per piece)</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">BGN</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+<tr class="price-item" data-price-bgn="19.56" data-price-eur="10">
+<td>Standard Design (template) – A5 format</td>
+<td><span>from </span><span class="price-value">10.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="29.34" data-price-eur="15">
+<td>Custom Design on Order</td>
+<td><span>from </span><span class="price-value">15.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item" data-price-bgn="5" data-price-eur="3">
+<td>Add Name, Inscription, or Message</td>
+<td><span>+ </span><span class="price-value">5.87</span> <span class="currency-symbol">€</span></td>
+</tr>
+<tr class="price-item">
+<td>Other format or fully customized</td>
+<td>Send inquiry</td>
+</tr>
+</table>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="form form-styled" id="contact">
+<h2>Inquiry for Notebook/Planner</h2>
+<form action="../../api/contact.js" id="contactForm" method="POST">
+<div class="row personal-info">
+<input name="form_type" type="hidden" value="Notebook/Planner form"/>
+<input name="name" placeholder="First Name" required="" type="text"/>
+<input name="surname" placeholder="Last Name" required="" type="text"/>
+<input name="email" placeholder="Email" required="" type="email"/>
+<input name="phone" placeholder="Phone (optional)" type="tel"/>
+</div>
+<div>
+<textarea id="business-description" name="message" placeholder="Please describe the desired product, standard or custom design, requested changes (if any), and approximate quantity." required=""></textarea>
+</div>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+              I agree with the
+              <a href="../terms_and_conditions/privacy.html" target="_blank">Privacy Policy</a>
+              and
+              <a href="../terms_and_conditions/terms.html" target="_blank">Terms and Conditions</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Send</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script src="../../script.js"></script>
+<script defer="defer" src="../../site-shell.js"></script></body>
+</html>

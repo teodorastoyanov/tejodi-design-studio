@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Invitation Design</title>
+<link href="../../styles/lqvo-dqsno.css" rel="stylesheet"/>
+<link href="../../images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Back to top" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<div class="hero-content">
+<h1>Invitations</h1>
+<p>Create an unforgettable first impression with handmade, fully personalized invitations for weddings, birthdays, baptisms, and other events.</p>
+<a class="cta-button" href="#contact">Send an inquiry</a>
+</div>
+</section>
+<!-- Products -->
+<section class="products">
+<div class="product-card">
+<img alt="Single-sided invitation" src="../../images/pokani/ednostranna.svg"/>
+<div class="product-info">
+<h2>Single-sided invitation</h2>
+<p>Minimalist and elegant, suitable for events with a modern or classic style.</p>
+</div>
+</div>
+<div class="product-card reverse">
+<img alt="Folded invitation" src="../../images/pokani/dvustranna.svg"/>
+<div class="product-info">
+<h2>Folded invitation</h2>
+<p>With more space for content, including event information on the inside. Perfect for weddings and baptisms.</p>
+</div>
+</div>
+<div class="product-card">
+<img alt="In envelope" src="../../images/pokani/splik.svg"/>
+<div class="product-info">
+<h2>Additional services</h2>
+<p>We can add any personalization to some of our designs, or create a completely new invitation just for you. Whether it’s colors, fonts, text, illustration, or a theme – everything can be adapted to your preferences.</p>
+</div>
+</div>
+</section>
+<!-- Price Section -->
+<section class="price-section">
+<h2>Pricing</h2>
+<div class="price-table">
+
+<table>
+<tr class="currency-row">
+<td><h3>Design pricing</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">BGN</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="15.65" data-price-eur="8.00">
+<td>Single-sided invitation</td>
+<td><span>from </span><span class="price-value">8.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="29.34" data-price-eur="15.00">
+<td>Folded invitation</td>
+<td><span>from </span><span class="price-value">15.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="19.56" data-price-eur="10.00">
+<td>Custom design</td>
+<td><span>from </span><span class="price-value">10.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+
+<table>
+<tr class="currency-row">
+<td><h3>Printing prices (per piece)</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="0.98" data-price-eur="0.50">
+<td>Single-sided invitation</td>
+<td><span>from </span><span class="price-value">0.50</span> <span class="currency-symbol">€</span> / piece</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="1.96" data-price-eur="1.00">
+<td>Folded invitation</td>
+<td><span>from </span><span class="price-value">1.00</span> <span class="currency-symbol">€</span> / piece</td>
+</tr>
+</table>
+
+<table>
+<tr class="currency-row">
+<td><h3>Additional services</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="1.96" data-price-eur="1.00">
+<td>Digital file for sending via email or chat</td>
+<td><span>+ </span><span class="price-value">1.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="0.98" data-price-eur="0.50">
+<td>Lamination (gloss/matte)</td>
+<td><span>+ </span><span class="price-value">0.50</span> <span class="currency-symbol">€</span> / piece</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="5.87" data-price-eur="3.00">
+<td>Voice message via QR code</td>
+<td><span>+ </span><span class="price-value">3.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="1.96" data-price-eur="1.00">
+<td>Luxury envelope (gold, pearl, or embossed)</td>
+<td><span>+ </span><span class="price-value">1.00</span> <span class="currency-symbol">€</span> / piece</td>
+</tr>
+
+</table>
+</div>
+</section>
+
+<!-- Contact Form -->
+<section class="form form-styled" id="contact">
+<h2>Invitation inquiry</h2>
+<form action="../../api/contact.js" id="contactForm" method="POST">
+<div class="row personal-info">
+<input name="form_type" type="hidden" value="Invitation form"/>
+<input name="name" placeholder="First name" required="" type="text"/>
+<input name="surname" placeholder="Last name" required="" type="text"/>
+<input name="email" placeholder="Email" required="" type="email"/>
+<input name="phone" placeholder="Phone (optional)" type="tel"/>
+</div>
+<div>
+<textarea id="business-description" name="message" placeholder="Tell us about your event – occasion (wedding, birthday, baptism, etc.), preferred style (e.g., elegant, vintage, colorful), desired colors, the text you want to include, number of invitations, and whether you want additional services such as name personalization, a luxury envelope, or a QR code with a message."></textarea>
+</div>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+              I agree to the
+              <a href="../terms_and_conditions/privacy.html" target="_blank">Privacy Policy</a>
+              and
+              <a href="../terms_and_conditions/terms.html" target="_blank">Terms and Conditions</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Send</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script defer src="../../site-shell.js"></script>
+<script defer src="../../script.js"></script>
+</body>
+</html>

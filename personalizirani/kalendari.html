@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Дизайн на календари</title>
+<link href="../styles/lqvo-dqsno.css" rel="stylesheet"/>
+<link href="../images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+<!-- Back to top -->
+<div id="top">
+<a aria-label="Върни се на върха" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<div class="hero-content">
+<h1>Календари</h1>
+<p>Предлагаме богата гама персонализирани календари – настолни, стенни и падащи, с ваши снимки. Възможно е добавяне на лунни фази, празници, важни дати и дори ламиниране за писане и триене.</p>
+<a class="cta-button" href="#contact">Изпратете запитване</a>
+</div>
+</section>
+<!-- Products -->
+<section class="products">
+<div class="product-card">
+<img alt="Настолен календар" src="../images/kalendari/nastolen.png"/>
+<div class="product-info">
+<h2>Настолен триъгълен календар</h2>
+<p>Компактен и стабилен, идеален за бюро или офис.</p>
+</div>
+</div>
+<div class="product-card reverse">
+<img alt="Едностранен календар" src="../images/kalendari/nastolen.png"/>
+<div class="product-info">
+<h2>12-листов календар</h2>
+<p>Малък и удобен, с един месец на лист, достъпен във формати А5 и А4.</p>
+</div>
+</div>
+<div class="product-card">
+<img alt="Двустранен календар" src="../images/kalendari/nastolen.png"/>
+<div class="product-info">
+<h2>Падащ календар</h2>
+<p>По-голям формат с място за снимки и повече детайли, достъпен във формати А5 и А4.</p>
+</div>
+</div>
+</section>
+<!-- Price Section -->
+<section class="price-section">
+<h2>Цени</h2>
+<div class="price-table">
+
+<table>
+<tr class="currency-row">
+<td><h3>Цени за един брой (дизайн + принтиране)</h3></td>
+<td>
+<div class="currency-switcher">
+<button data-currency="bgn">лв</button>
+<button class="active" data-currency="eur">€</button>
+</div>
+</td>
+</tr>
+
+<tr class="price-item" data-price-bgn="17.60" data-price-eur="9.00">
+<td>Настолен триъгълен календар</td>
+<td><span>от </span><span class="price-value">9.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="19.56" data-price-eur="10.00">
+<td>А5 календар – 12 листов</td>
+<td><span>от </span><span class="price-value">10.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="23.47" data-price-eur="12.00">
+<td>А5 падащ календар</td>
+<td><span>от </span><span class="price-value">12.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="27.38" data-price-eur="14.00">
+<td>А4 календар – 12 листов</td>
+<td><span>от </span><span class="price-value">14.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="31.29" data-price-eur="16.00">
+<td>А4 падащ календар</td>
+<td><span>от </span><span class="price-value">16.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+
+
+<table>
+<tr class="currency-row">
+<td><h3>Допълнителни услуги</h3></td>
+<td></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="3.91" data-price-eur="2.00">
+<td>Добавяне на лунни фази към календара</td>
+<td><span>+ </span><span class="price-value">2.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="3.91" data-price-eur="2.00">
+<td>Включване на важни дати (празници, лични поводи)</td>
+<td><span>+ </span><span class="price-value">2.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+
+<tr class="price-item" data-price-bgn="9.78" data-price-eur="5.00">
+<td>Ламиниране на календара (пиши и изтривай)</td>
+<td><span>+ </span><span class="price-value">5.00</span> <span class="currency-symbol">€</span></td>
+</tr>
+</table>
+
+</div>
+</section>
+<!-- Contact Form -->
+<section class="form" id="contact">
+<h2>Запитване за календар</h2>
+<form action="../api/contact.js" id="contactForm" method="POST">
+<div class="contact-row">
+<input name="form_type" type="hidden" value="Форма календари"/>
+<input name="name" placeholder="Име" required="" type="text"/>
+<input name="surname" placeholder="Фамилия" required="" type="text"/>
+<input name="email" placeholder="Имейл" required="" type="email"/>
+<input name="phone" placeholder="Телефон (по желание)" type="tel"/>
+</div>
+<textarea id="business-description" name="message" placeholder="Напишете кой вид календар желаете, предпочитан дизайн (стандартен или индивидуален), допълнителни желания като важни дати, лунни фази, ламиниране и количество."></textarea>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+<span>
+              Съгласен/на съм с
+              <a href="../terms_and_conditions/privacy.html" target="_blank">Политиката за поверителност</a>
+              и
+              <a href="../terms_and_conditions/terms.html" target="_blank">Общите условия</a>
+</span>
+</label>
+</div>
+<button class="button-gradient" type="submit">Изпрати</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script defer src="../site-shell.js"></script>
+<script defer src="../script.js"></script>
+</body>
+</html>

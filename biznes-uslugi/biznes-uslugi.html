@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Tejodi Design Studio</title>
+<link href="../styles/index.css" rel="stylesheet"/>
+<link href="../images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+<!-- Back to top button -->
+<div id="top">
+<a aria-label="Върни се на върха" class="back-to-top" href="#top">↑</a>
+</div>
+<!-- Header and Navigation -->
+<header id="site-header"></header><div class="language-switcher" id="site-language-switcher"></div>
+<main>
+<!-- Hero Section -->
+<section id="hero">
+<h1>Бизнес услуги</h1>
+<p>Предлагаме професионален дизайн и изработка на всички необходими рекламни и корпоративни материали за успешно развитие на вашия бизнес. 
+         От визитки и лога до флаери, календари и обяви за социални мрежи - всичко е създадено с внимание към детайла и актуалните дизайнерски тенденции.</p>
+</section>
+<!-- Services Overview -->
+<section class="services-section" id="services">
+<h2 class="section-title">Услуги</h2>
+<div class="services-grid">
+<a class="service-link" href="sait.html">
+<div class="service-card">
+<img alt="Сайт" src="../images/ikoni_uslugi/sait.svg"/>
+<h3>Сайт</h3>
+<p>Модерни и бързи уебсайтове, създадени да представят Вашия бизнес професионално онлайн. 
+                Оптимизирани за телефон и компютър, с ясен дизайн и лесна връзка с клиенти.</p>
+</div>
+</a>
+<a class="service-link" href="vizitki.html">
+<div class="service-card">
+<img alt="Визитки" src="../images/ikoni_uslugi/vizitki.svg"/>
+<h3>Визитки</h3>
+<p>Елегантни и професионални визитки с индивидуален дизайн и внимание към всеки детайл. 
+               Създайте първо впечатление, което остава в съзнанието.</p>
+</div>
+</a>
+<a class="service-link" href="logo.html">
+<div class="service-card">
+<img alt="Лога" src="../images/ikoni_uslugi/logo1.svg"/>
+<h3>Лога</h3>
+<p>Уникални лога, които отразяват визията и ценностите на вашия бранд. 
+               Модерни, минималистични или артистични - според вашата идея.</p>
+</div>
+</a>
+<a class="service-link" href="flaeri.html">
+<div class="service-card">
+<img alt="Брошури" src="../images/ikoni_uslugi/broshuri.svg"/>
+<h3>Брошури</h3>
+<p>Впечатляващи рекламни материали с ясен фокус, модерна визия и силно въздействие. 
+               Идеални за кампании, представяне на продукти или събития.</p>
+</div>
+</a>
+<a class="service-link" href="postove.html">
+<div class="service-card">
+<img alt="Постове" src="../images/ikoni_uslugi/postove.svg"/>
+<h3>Обяви за социални мрежи</h3>
+<p>Атрактивни визии за социални мрежи, които ангажират аудиторията ви и представят бранда ви стилно и креативно.</p>
+</div>
+</a>
+<a class="service-link" href="tetradki-planeri.html">
+<div class="service-card">
+<img alt="Тетрадки и планери" src="../images/ikoni_uslugi/tetradki.svg"/>
+<h3>Тетрадки и планери</h3>
+<p>Функционални и красиви хартиени продукти с индивидуален дизайн. 
+               Подходящи за подарък, организация и вдъхновение в ежедневието.</p>
+</div>
+</a>
+<a class="service-link" href="etiketi.html">
+<div class="service-card">
+<img alt="Етикети" src="../images/ikoni_uslugi/etiketi.svg"/>
+<h3>Етикети</h3>
+<p>Персонализирани етикети за продукти, подаръци или специални поводи - с възможности за различни формати и материали.</p>
+</div>
+</a>
+<a class="service-link" href="kalendari.html">
+<div class="service-card">
+<img alt="Календари" src="../images/ikoni_uslugi/kalendari.svg"/>
+<h3>Календари</h3>
+<p>Брандирани или лични календари, съчетаващи стил и практичност - отличен избор за реклама или подарък.</p>
+</div>
+</a>
+<a class="service-link" href="cenorazpisi.html">
+<div class="service-card">
+<img alt="Ценоразписи" src="../images/ikoni_uslugi/cenorazpisi.svg"/>
+<h3>Ценоразписи и менюта</h3>
+<p>Дизайн, съобразен със стила на вашия бизнес - ясен, елегантен и лесен за клиентите.</p>
+</div>
+</a>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="form" id="contact">
+<h2>Свържете се с мен</h2>
+<form action="../api/contact.js" id="contactForm" method="POST">
+<div class="contact-row">
+<input name="form_type" type="hidden" value="Форма основна"/>
+<input name="name" placeholder="Име" required="" type="text"/>
+<input name="surname" placeholder="Фамилия" required="" type="text"/>
+<input name="email" placeholder="Имейл" required="" type="email"/>
+<input name="phone" placeholder="Телефон (по желание)" type="tel"/>
+</div>
+<textarea name="message" placeholder="Търсите нещо по-специално? Ако не намирате точната услуга, която ви е нужна - пишете ми! Винаги има място за нови идеи. Ще се радвам да обсъдим идеята ви и да я превърнем в реалност." required=""></textarea>
+<div class="checkbox-wrapper">
+<label class="checkbox-privacy">
+<input required="" type="checkbox"/>
+            Съгласен/на съм с <a href="../terms_and_conditions/privacy.html" target="_blank">Политиката за поверителност</a> и <a href="../terms_and_conditions/terms.html" target="_blank">Общите условия</a>
+</label>
+</div>
+<button class="button-gradient" type="submit">Изпрати</button>
+<div id="formMessage" style="margin-top: 1em;"></div>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer" id="site-footer"></footer>
+<!-- Scripts -->
+<script defer src="../site-shell.js"></script>
+<script defer src="../script.js"></script>
+</body>
+</html>
