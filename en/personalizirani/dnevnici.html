@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Bible Journals</title>
+  <link href="../../styles/lqvo-dqsno.css" rel="stylesheet"/>
+  <link href="../../images/fav.svg" rel="icon" type="image/x-icon"/>
+</head>
+
+<body class="tetradki-planeri">
+  <!-- Back to top -->
+  <div id="top">
+    <a aria-label="Back to top" class="back-to-top" href="#top">↑</a>
+  </div>
+
+  <!-- Header and Navigation -->
+  <header id="site-header"></header>
+  <div class="language-switcher" id="site-language-switcher"></div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Bible Journals</h1>
+        <p>
+          Journals created to help people understand God and the Bible in a clearer,
+          more structured and personal way. Perfect for daily quiet time,
+          reflection, prayer and building spiritual consistency.
+        </p>
+        <a class="cta-button" href="#contact">Send an inquiry</a>
+      </div>
+    </section>
+
+    <!-- Products Preview -->
+    <section class="products">
+      <div class="product-card">
+        <img alt="Spiritual Growth for Women" src="../../images/dnevnici/maje.png"/>
+        <div class="product-info">
+          <h2>Spiritual Growth for Women</h2>
+          <p>
+            A gentle yet powerful journal for women who want to deepen their
+            relationship with God. Includes reading guidance, space for reflection,
+            prayer notes and practical questions for everyday application.
+          </p>
+        </div>
+      </div>
+
+      <div class="product-card reverse">
+        <img alt="Spiritual Growth for Men" src="../../images/dnevnici/jeni.png"/>
+        <div class="product-info">
+          <h2>Spiritual Growth for Men</h2>
+          <p>
+            A journal for men who value clarity and focus: Scripture, reflection, action.
+            Designed to build spiritual discipline and strength in faith.
+          </p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img alt="New Beginning (for Beginners)" src="../../images/dnevnici/novo_nachalo.png"/>
+        <div class="product-info">
+          <h2>New Beginning (for Beginners)</h2>
+          <p>
+            A perfect starting point for those who are just getting to know the Bible.
+            Step-by-step guidance, simple explanations, reflection questions,
+            and space for personal notes and prayers.
+          </p>
+        </div>
+      </div>
+
+      <div class="product-card reverse">
+        <img alt="Under the Shadow of His Wings (Overcoming Fear)" src="../../images/dnevnici/pod_sqnkata.png"/>
+        <div class="product-info">
+          <h2>Under the Shadow of His Wings</h2>
+          <p>
+            A journal for moments of anxiety, uncertainty and fear.
+            Includes guided affirmations, prayer pages and reflection questions
+            that redirect your thoughts toward God’s promises and peace.
+          </p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img alt="In Perfect Unity (for Couples)" src="../../images/dnevnici/edinstvo.png"/>
+        <div class="product-info">
+          <h2>In Perfect Unity (for Couples)</h2>
+          <p>
+            A journal for couples who want to grow together in faith.
+            Structured for shared reading, discussion, gratitude and prayer,
+            plus dedicated pages for goals and family values.
+          </p>
+        </div>
+      </div>
+
+      <!-- Extra list without images -->
+      <div class="product-card reverse">
+        <img alt="Other Bible Journals" src="../../images/tetradki/planer.png"/>
+        <div class="product-info">
+          <h2>Other Bible Journals (without images)</h2>
+          <p>
+            I also offer additional journal types. If you do not see exactly
+            what you are looking for, simply mention it in your inquiry and
+            describe the theme you need. I can suggest a suitable option.
+          </p>
+          <p>
+            Examples you may specify: for children, teenagers, gratitude journals,
+            prayer journals, 30-day habit journals, a specific book of the Bible,
+            fasting and spiritual strengthening.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Price Section -->
+    <section class="price-section">
+      <h2>Prices</h2>
+      <div class="price-table">
+        <table>
+          <tr class="currency-row">
+            <td><h3>Printing Prices (per copy)</h3></td>
+            <td>
+              <div class="currency-switcher">
+                <button data-currency="bgn">BGN</button>
+                <button class="active" data-currency="eur">€</button>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="price-item" data-price-bgn="19.56" data-price-eur="10.00">
+            <td>Standard journal (ready-made design) – A5 Format</td>
+            <td><span>from </span><span class="price-value">10.00</span> <span class="currency-symbol">€</span></td>
+          </tr>
+
+          <tr class="price-item" data-price-bgn="29.34" data-price-eur="15.00">
+            <td>Custom journal (theme/structure/personalization)</td>
+            <td><span>from </span><span class="price-value">15.00</span> <span class="currency-symbol">€</span></td>
+          </tr>
+
+          <tr class="price-item" data-price-bgn="5.87" data-price-eur="3.00">
+            <td>Add a name, dedication or short message</td>
+            <td><span>+ </span><span class="price-value">3.00</span> <span class="currency-symbol">€</span></td>
+          </tr>
+
+          <tr class="price-item">
+            <td>Different format or fully customized version</td>
+            <td>Send an inquiry</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="form form-styled" id="contact">
+      <h2>Inquiry for a Bible Journal</h2>
+      <form action="../../api/contact.js" id="contactForm" method="POST">
+        <div class="row personal-info">
+          <input name="form_type" type="hidden" value="Bible Journals Form"/>
+          <input name="name" placeholder="First Name" required="" type="text"/>
+          <input name="surname" placeholder="Last Name" required="" type="text"/>
+          <input name="email" placeholder="Email" required="" type="email"/>
+          <input name="phone" placeholder="Phone (optional)" type="tel"/>
+        </div>
+
+        <div>
+          <textarea
+            id="business-description"
+            name="message"
+            placeholder="Please specify which journal you would like (one of the five types or another), whether you prefer a standard or custom version, who it is for (woman/man/couple/beginner), and the approximate quantity if ordering multiple copies."
+            required=""
+          ></textarea>
+        </div>
+
+        <div class="checkbox-wrapper">
+          <label class="checkbox-privacy">
+            <input required="" type="checkbox"/>
+            <span>
+              I agree with the
+              <a href="../terms_and_conditions/privacy.html" target="_blank">Privacy Policy</a>
+              and
+              <a href="../terms_and_conditions/terms.html" target="_blank">Terms and Conditions</a>
+            </span>
+          </label>
+        </div>
+
+        <button class="button-gradient" type="submit">Send</button>
+        <div id="formMessage" style="margin-top: 1em;"></div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <!-- Scripts -->
+  <script defer src="../../site-shell.js"></script>
+  <script defer src="../../script.js"></script>
+</body>
+</html>
