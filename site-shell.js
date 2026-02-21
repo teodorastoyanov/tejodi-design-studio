@@ -148,7 +148,7 @@
         },
         {
           key: "email",
-          href: "mailto:tejodidesign@eu",
+          href: "mailto:info@tejodidesign.eu",
           icon: "images/futer_ikoni/email.svg",
           aria: { bg: "Имейл", en: "Email" },
           alt: { bg: "Gmail", en: "Gmail" },
