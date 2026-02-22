@@ -1,5 +1,24 @@
 (() => {
   "use strict";
+
+   // =========================
+  // VERCEL ANALYTICS
+  // =========================
+  function injectVercelAnalytics() {
+    if (document.querySelector('script[src="/_vercel/insights/script.js"]')) return;
+
+    window.va =
+      window.va ||
+      function () {
+        (window.vaq = window.vaq || []).push(arguments);
+      };
+
+    const s = document.createElement("script");
+    s.defer = true;
+    s.src = "/_vercel/insights/script.js";
+    document.head.appendChild(s);
+  }
+
   const CONFIG = {
     languages: ["bg", "en"],
     defaultLang: "bg",
@@ -363,6 +382,7 @@ function getCurrentLangRelativePath(pathname) {
   // Run
   // =========================
   function run() {
+    injectVercelAnalytics(); 
     let basePrefix = getBasePrefix();
     const lang = detectLang(window.location.pathname);
 
