@@ -1,6 +1,103 @@
-<?xml version="1.0" encoding="UTF-8"?> <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url> <loc>https://tejodidesign.eu/</loc> <priority>1.0</priority> </url> 
-<url> <loc>https://tejodidesign.eu/biznes-uslugi/biznes-uslugi.html</loc> <priority>0.9</priority> </url> 
-<url> <loc>https://tejodidesign.eu/en/index.html</loc> <priority>0.8</priority> </url> 
-<url> <loc>https://tejodidesign.eu/terms_and_conditions/terms.html</loc> <priority>0.5</priority> </url> 
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- BG (default, no prefix) -->
+  <url><loc>https://tejodidesign.eu/</loc></url>
+  <url><loc>https://tejodidesign.eu/index.html</loc></url>
+
+  <url><loc>https://tejodidesign.eu/biznes-uslugi/biznes-uslugi.html</loc></url>
+  <url><loc>https://tejodidesign.eu/biznes-uslugi/sait.html</loc></url>
+  <url><loc>https://tejodidesign.eu/biznes-uslugi/logo.html</loc></url>
+  <url><loc>https://tejodidesign.eu/biznes-uslugi/vizitki.html</loc></url>
+  <url><loc>https://tejodidesign.eu/biznes-uslugi/flaeri.html</loc></url>
+  <url><loc>https://tejodidesign.eu/biznes-uslugi/kalendari.html</loc></url>
+  <url><loc>https://tejodidesign.eu/biznes-uslugi/etiketi.html</loc></url>
+  <url><loc>https://tejodidesign.eu/biznes-uslugi/postove.html</loc></url>
+  <url><loc>https://tejodidesign.eu/biznes-uslugi/tetradki-planeri.html</loc></url>
+  <url><loc>https://tejodidesign.eu/biznes-uslugi/cenorazpisi.html</loc></url>
+
+  <url><loc>https://tejodidesign.eu/personalizirani/personalizirani.html</loc></url>
+  <url><loc>https://tejodidesign.eu/personalizirani/podaruci.html</loc></url>
+  <url><loc>https://tejodidesign.eu/personalizirani/drehi.html</loc></url>
+  <url><loc>https://tejodidesign.eu/personalizirani/tetradki-planeri.html</loc></url>
+  <url><loc>https://tejodidesign.eu/personalizirani/dnevnici.html</loc></url>
+  <url><loc>https://tejodidesign.eu/personalizirani/kalendari.html</loc></url>
+  <url><loc>https://tejodidesign.eu/personalizirani/kartichki.html</loc></url>
+  <url><loc>https://tejodidesign.eu/personalizirani/knigorazdeliteli.html</loc></url>
+
+  <url><loc>https://tejodidesign.eu/sabitiya/sabitiya.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sabitiya/pokani.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sabitiya/tabelki.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sabitiya/qr-kartichki.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sabitiya/aksesoari.html</loc></url>
+
+  <url><loc>https://tejodidesign.eu/terms_and_conditions/terms.html</loc></url>
+  <url><loc>https://tejodidesign.eu/terms_and_conditions/privacy.html</loc></url>
+
+  <!-- EN (/en) -->
+  <url><loc>https://tejodidesign.eu/en/</loc></url>
+  <url><loc>https://tejodidesign.eu/en/index.html</loc></url>
+
+  <url><loc>https://tejodidesign.eu/en/biznes-uslugi/biznes-uslugi.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/biznes-uslugi/sait.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/biznes-uslugi/logo.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/biznes-uslugi/vizitki.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/biznes-uslugi/flaeri.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/biznes-uslugi/kalendari.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/biznes-uslugi/etiketi.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/biznes-uslugi/postove.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/biznes-uslugi/tetradki-planeri.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/biznes-uslugi/cenorazpisi.html</loc></url>
+
+  <url><loc>https://tejodidesign.eu/en/personalizirani/personalizirani.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/personalizirani/podaruci.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/personalizirani/drehi.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/personalizirani/tetradki-planeri.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/personalizirani/dnevnici.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/personalizirani/kalendari.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/personalizirani/kartichki.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/personalizirani/knigorazdeliteli.html</loc></url>
+
+  <url><loc>https://tejodidesign.eu/en/sabitiya/sabitiya.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/sabitiya/pokani.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/sabitiya/tabelki.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/sabitiya/qr-kartichki.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/sabitiya/aksesoari.html</loc></url>
+
+  <url><loc>https://tejodidesign.eu/en/terms_and_conditions/terms.html</loc></url>
+  <url><loc>https://tejodidesign.eu/en/terms_and_conditions/privacy.html</loc></url>
+
+  <!-- SR (/sr) -->
+  <url><loc>https://tejodidesign.eu/sr/</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/index.html</loc></url>
+
+  <url><loc>https://tejodidesign.eu/sr/biznes-uslugi/biznes-uslugi.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/biznes-uslugi/sait.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/biznes-uslugi/logo.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/biznes-uslugi/vizitki.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/biznes-uslugi/flaeri.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/biznes-uslugi/kalendari.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/biznes-uslugi/etiketi.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/biznes-uslugi/postove.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/biznes-uslugi/tetradki-planeri.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/biznes-uslugi/cenorazpisi.html</loc></url>
+
+  <url><loc>https://tejodidesign.eu/sr/personalizirani/personalizirani.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/personalizirani/podaruci.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/personalizirani/drehi.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/personalizirani/tetradki-planeri.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/personalizirani/dnevnici.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/personalizirani/kalendari.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/personalizirani/kartichki.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/personalizirani/knigorazdeliteli.html</loc></url>
+
+  <url><loc>https://tejodidesign.eu/sr/sabitiya/sabitiya.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/sabitiya/pokani.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/sabitiya/tabelki.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/sabitiya/qr-kartichki.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/sabitiya/aksesoari.html</loc></url>
+
+  <url><loc>https://tejodidesign.eu/sr/terms_and_conditions/terms.html</loc></url>
+  <url><loc>https://tejodidesign.eu/sr/terms_and_conditions/privacy.html</loc></url>
+
 </urlset>
